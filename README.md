@@ -58,3 +58,4 @@ Para publicar la web en línea, se puede usar **GitHub Pages**:
 ## Autores :black_nib:
 
 - CRACRKOB - Estudiante de DAM
+- Inspirado : https://dribbble.com/shots/26014508-Petspot-Landing-Page-for-Pet-Shop 
