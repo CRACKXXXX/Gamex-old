@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es,en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEX</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Train+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Site header with logo and navigation -->
+    <header>
+        <hhead><h1>GAMEX</h1></hhead>
+        <nav>
+            <ul>
+                <li><button onclick="showSection('inicio')">Home</button></li>
+                <li><button onclick="showSection('nuestros-juegos')">Nuestros Juegos</button></li>
+                <li><button onclick="showSection('ofertas')">Ofertas</button></li>
+                <li><button onclick="showSection('eventos')">Eventos</button></li>
+                <li><button onclick="showSection('contacto')">Contacto</button></li>
+                <li><button onclick="showSection('empleos')">Empleos</button></li>
+                <div class="container">
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area with multiple sections -->
+    <main>
+        <!-- Home section with store introduction -->
+        <section id="inicio" class="content-section">
+            <h2>Bienvenido a Nuestra Tienda de Videojuegos</h2>
+            <p>¡Descubre los últimos lanzamientos y los clásicos de siempre!</p>
+    
+            <h3>¿Quiénes somos?</h3>
+            <p>GAMEX es una tienda local que ha estado sirviendo a la comunidad de las Islas Canarias desde 2024. Nuestro equipo está formado por expertos en videojuegos que siempre están listos para ayudarte a encontrar el juego perfecto, la consola ideal o los accesorios que necesitas para mejorar tu experiencia de juego.</p>
+    
+            <h3>Nuestra Oferta</h3>
+            <ul>
+                <li><strong>Videojuegos:</strong> Desde los títulos más recientes hasta los clásicos atemporales, tenemos algo para todos los gustos.</li>
+                <li><strong>Consolas:</strong> Ofrecemos las consolas más recientes de todas las marcas, asegurando que te mantengas al día con la tecnología más avanzada.</li>
+                <li><strong>Accesorios:</strong> Desde mandos y auriculares hasta figuras coleccionables, tenemos todo lo que necesitas para complementar tu experiencia de juego.</li>
+                <li><strong>Merchandising:</strong> Explora nuestra selección de productos relacionados con tus juegos y franquicias favoritas.</li>
+            </ul>
+    
+            <h3>¿Por qué elegir GAMEX?</h3>
+            <ul>
+                <li><strong>Atención al cliente excepcional:</strong> Nuestro equipo está aquí para ayudarte en cada paso, brindando asesoramiento personalizado y recomendaciones basadas en tus preferencias.</li>
+                <li><strong>Eventos y comunidad:</strong> Organizamos eventos regulares, torneos y noches de juego para que puedas conectar con otros jugadores y disfrutar de la comunidad.</li>
+                <li><strong>Ofertas y promociones:</strong> Mantente atento a nuestras ofertas especiales y promociones exclusivas para conseguir los mejores precios en tus juegos y accesorios favoritos.</li>
+            </ul>
+
+            <h3>Visítanos</h3>
+            <p>Te invitamos a visitar nuestra tienda en Calle Triana, 91, 35002 Las Palmas de Gran Canaria, Las Palmas, y descubrir todo lo que GAMEX tiene para ofrecer. También puedes explorar nuestra tienda en línea para hacer tus pedidos desde la comodidad de tu hogar.</p>
+    
+            <h3>Contáctanos</h3>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos en <strong>GAMEX@gmail.com</strong> o al <strong>691 77 11 22</strong>. ¡Estamos aquí para ayudarte!</p>
+        </section>
+
+
+        <!-- Games section with product listings -->
+        <section id="nuestros-juegos" class="content-section" style="display: none;">
+            <h5>Nuestros Juegos</h5>
+            <!-- Container for game cards -->
+            <div class="game-container">
+                <div class="game-card">
+                    <h3>The Legend of Zelda: Tears of the Kingdom</h3>
+                    <img src="/img/imagen_zelda.jpg" alt="The Legend of Zelda: Tears of the Kingdom" class="game-image">
+                    <p><strong>Platform:</strong> Nintendo Switch</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> The sequel to "Breath of the Wild" offers an expansive world full of adventures, puzzles, and a deep narrative following Link on his mission to save Hyrule.</p>
+                </div>
+                <div class="game-card">
+                    <h3><span class="notranslate">Baldur's Gate 3</span></h3>
+                    <img src="/img/imagen_baldurs_gate.jpg" alt="Baldur's Gate 3" class="game-image">
+                    <p><strong>Platform:</strong> PC, PS5</p>
+                    <p><strong>Price:</strong> $59.99</p>
+                    <p><strong>Description:</strong> <span class="notranslate">A Baldur's Gate RPG</span> based on the famous <span class="notranslate">Dungeons & Dragons</span> series, where player choices affect the story and character development.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Call of Duty: Modern Warfare II</h3>
+                    <img src="/img/imagen_call_of_duty.jpg" alt="Call of Duty: Modern Warfare II" class="game-image">
+                    <p><strong>Platform:</strong> PC, PS4, PS5, Xbox One, Xbox Series X/S</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> The latest installment in the popular shooter franchise, with an exciting campaign mode and addictive multiplayer.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Starfield</h3>
+                    <img src="/img/imagen_starfield.jpg" alt="Starfield" class="game-image">
+                    <p><strong>Platform:</strong> PC, Xbox Series X/S</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> A space RPG from Bethesda that allows players to explore a vast universe, customize ships, and engage in interstellar combat.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Spider-Man 2</h3>
+                    <img src="/img/imagen_spiderman.jpg" alt="Spider-Man 2" class="game-image">
+                    <p><strong>Platform:</strong> PS5</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> The sequel to the acclaimed action game, where players can switch between Peter Parker and Miles Morales while fighting iconic villains.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Mortal Kombat 1</h3>
+                    <img src="/img/imagen_mortal_kombat.jpg" alt="Mortal Kombat 1" class="game-image">
+                    <p><strong>Platform:</strong> PC, PS5, Xbox Series X/S, Nintendo Switch</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> The latest entry in the famous fighting saga, featuring new characters and improved combat mechanics.</p>
+                </div>
+                <div class="game-card">
+                </div>
+                <div class="game-card">
+                    <h3>Final Fantasy XVI</h3>
+                    <img src="/img/imagen_final_fantasy.jpg" alt="Final Fantasy XVI" class="game-image">
+                    <p><strong>Plataforma:</strong> PS5, PC</p>
+                    <p><strong>Precio:</strong> $69.99</p>
+                    <p><strong>Descripción:</strong> La última entrega de la icónica serie de RPG, que presenta un mundo vasto y una narrativa épica centrada en la lucha por el control de los Eikons y el destino de los reinos.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Hogwarts Legacy</h3>
+                    <img src="/img/imagen_hogwarts_legacy.jpg" alt="Hogwarts Legacy" class="game-image">
+                    <p><strong>Plataforma:</strong> PC, PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch</p>
+                    <p><strong>Precio:</strong> $59.99</p>
+                    <p><strong>Descripción:</strong> Un juego de rol de acción ambientado en el mundo mágico de Harry Potter, donde los jugadores pueden explorar Hogwarts y sus alrededores mientras desarrollan sus habilidades mágicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers section with discounted games -->
+        <section id="ofertas" class="content-section" style="display: none;">
+            <h5>Ofertas</h5>
+            <p>No te pierdas nuestras increíbles ofertas:</p>
+
+            <h3>Top 3 Favoritos</h3>
+            <!-- Container for offer cards -->
+            <div class="offer-container">
+                <div class="offer-card">
+                    <h4>The Legend of Zelda: Tears of the Kingdom</h4>
+                    <p><strong>Precio original:</strong> $69.99</p>
+                    <p><strong>Oferta:</strong> $55.99 (20% de descuento)</p>
+                    <img src="/img/imagen_zelda.jpg" alt="The Legend of Zelda: Tears of the Kingdom" class="offer-image">
+                </div>
+                <div class="offer-card">
+                    <h4><span class="notranslate">Baldur's Gate 3</span></h4>
+                    <p><strong>Precio original:</strong> $59.99</p>
+                    <p><strong>Oferta:</strong> $41.99 (30% de descuento)</p>
+                    <img src="/img/imagen_baldurs_gate.jpg" alt="Baldur's Gate 3" class="offer-image">
+                </div>
+                <div class="offer-card">
+                    <h4>Resident Evil 4 (Remake)</h4>
+                    <p><strong>Precio original:</strong> $59.99</p>
+                    <p><strong>Oferta:</strong> $47.99 (20% de descuento)</p>
+                    <img src="/img/imagen_resident_evil.jpg" alt="Resident Evil 4 (Remake)" class="offer-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Events section with upcoming tournaments -->
+        <section id="eventos" class="content-section" style="display: none;">
+            <h5>Eventos de Videojuegos 2025</h5>
+
+            <!-- Individual event block -->
+            <div class="event">
+                <h3>Torneo de Super Smash Bros. Ultimate</h3>
+                <img src="/img/smash_bros_torneo.jpg" alt="Torneo de Smash Bros">
+                <div class="details">
+                    <strong>Fecha:</strong> Sábado, 22 de marzo de 2025<br>
+                    <strong>Horario:</strong> 14:00 - 18:00<br>
+                    <strong>Precio de Entrada:</strong> $10<br>
+                    <strong>Precio de Participación:</strong> $20<br>
+                    <strong>Detalles:</strong> Compite contra otros jugadores en este emocionante torneo. Se premiará a los tres primeros lugares con trofeos y premios en efectivo. ¡Inscríbete antes de que se agoten los lugares!
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+        
+            <div class="event">
+                <h3>Maratón de Juegos Retro</h3>
+                <img src="/img/juegos_retro.jpg" alt="Maratón de Juegos Retro">
+                <div class="details">
+                    <strong>Fecha:</strong> Domingo, 30 de marzo de 2025<br>
+                    <strong>Horario:</strong> 10:00 - 20:00<br>
+                    <strong>Precio de Entrada:</strong> $5<br>
+                    <strong>Precio de Participación:</strong> Gratis (solo para jugar)<br>
+                    <strong>Detalles:</strong> Un día completo dedicado a los clásicos. Ven a disfrutar de juegos retro en consolas clásicas y participa en concursos de puntuación. Habrá premios para los mejores jugadores.
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+        
+            <div class="event">
+                <h3>Torneo de League of Legends</h3>
+                <img src="/img/league_of_legends_torneo.jpg" alt="Torneo de League of Legends">
+                <div class="details">
+                    <strong>Fecha:</strong> Sábado, 7 de junio de 2025<br>
+                    <strong>Horario:</strong> 16:00 - 22:00<br>
+                    <strong>Precio de Entrada:</strong> $15<br>
+                    <strong>Precio de Participación:</strong> $30 por equipo<br>
+                    <strong>Detalles:</strong> Forma tu equipo y compite en este torneo de League of Legends. Los ganadores recibirán premios en efectivo y artículos del juego. ¡No te lo pierdas!
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+        
+            <div class="event">
+                <h3>Noche de Juegos de Mesa y Videojuegos</h3>
+                <img src="/img/noche_de_juegos.jpg" alt="Noche de Juegos">
+                <div class="details">
+                    <strong>Fecha:</strong> Viernes, 12 de septiembre de 2025<br>
+                    <strong>Horario:</strong> 18:00 - 23:00<br>
+                    <strong>Precio de Entrada:</strong> $7<br>
+                    <strong>Precio de Participación:</strong> Gratis (para jugar)<br>
+                    <strong>Detalles:</strong> Disfruta de una noche de diversión con videojuegos y juegos de mesa. Habrá diferentes estaciones con juegos populares y un área para torneos informales.
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+        
+            <div class="event">
+                <h3>Campeonato de Fortnite</h3>
+                <img src="/img/campeonato_fortnite.jpg" alt="Campeonato de Fortnite">
+                <div class="details">
+                    <strong>Fecha:</strong> Domingo, 19 de octubre de 2025<br>
+                    <strong>Horario:</strong> 15:00 - 19:00<br>
+                    <strong>Precio de Entrada:</strong> $10<br>
+                    <strong>Precio de Participación:</strong> $20<br>
+                    <strong>Detalles:</strong> Demuestra tus habilidades en este campeonato de Fortnite. Los participantes competirán en varias rondas y los mejores recibirán premios en efectivo y artículos exclusivos del juego.
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+
+            <div class="event">
+                <h3>Campeonato de Valorant</h3>
+                <img src="/img/valorant_campeonato.jpg" alt="Campeonato de Valorant">
+                <div class="details">
+                    <strong>Fecha:</strong> Domingo, 12 de abril de 2025<br>
+                    <strong>Horario:</strong> 15:00 - 19:00<br>
+                    <strong>Precio de Entrada:</strong> $10<br>
+                    <strong>Precio de Participación:</strong> $20<br>
+                    <strong>Detalles:</strong> Demuestra tus habilidades en este emocionante campeonato de Valorant. Los mejores equipos se llevarán premios y reconocimiento.
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+        </section>
+
+        <!-- Contact section with details and map -->
+        <section id="contacto" class="content-section" style="display: none;">
+            <h5>Contáctanos</h5>
+    <!-- Contact information block -->
+    <div class="contact-info">
+        <p>¿Tienes alguna pregunta o necesitas más información? ¡Estamos aquí para ayudarte! Puedes ponerte en contacto con nosotros a través de los siguientes medios:</p>
+        
+        <strong>Dirección:</strong><br>
+        Calle Triana, 91<br>
+        35002 Las Palmas de Gran Canaria, Las Palmas<br><br>
+        
+        <strong>Correo Electrónico:</strong><br>
+        <a href="mailto:GAMEX@gmail.com">GAMEX@gmail.com</a><br><br>
+        
+        <strong>Teléfono:</strong><br>
+        📞 691 77 11 22<br><br>
+        
+        <strong>Horario de Atención:</strong><br>
+        Lunes a Viernes: 9:00 AM - 6:00 PM<br>
+        Sábados: 10:00 AM - 2:00 PM
+    </div>
+
+    <!-- Embedded Google Maps -->
+    <div class="map-container">
+        <h2>Encuéntranos en el Mapa</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d219.95586295570152!2d-15.417028809797868!3d28.10707630834215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1731577935311!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</section>
+        <!-- Jobs section with open positions -->
+        <section id="empleos" class="content-section" style="display: none;">
+            <h5>Únete a Nuestro Equipo</h5>
+            <p>En GAMEX siempre estamos buscando personas apasionadas por los videojuegos para unirse a nuestro equipo. Aquí están nuestras vacantes actuales:</p>
+
+            <!-- Job vacancy block -->
+                <div class="vacante">
+                    <h3>Vendedor en Tienda</h3> 
+                    <p><strong>Descripción:</strong> Buscamos un vendedor entusiasta que tenga un buen conocimiento de videojuegos y consolas para ayudar a nuestros clientes a encontrar lo que buscan.</p> 
+                    <p><strong>Requisitos:</strong> Experiencia previa en ventas, pasión por los videojuegos, habilidades de comunicación.</p> 
+                    <p><strong>Ubicación:</strong> Las Palmas de Gran Canaria</p> 
+                    <p><strong>Cómo aplicar:</strong> Envía tu CV a <a href="mailto:empleos@gamex.com">empleos@gamex.com</a></p> 
+                </div> 
+            
+                <div class="vacante"> 
+                    <h3>Especialista en Marketing Digital</h3> 
+                    <p><strong>Descripción:</strong> Estamos buscando un especialista en marketing digital para gestionar nuestras campañas en redes sociales y mejorar nuestra presencia en línea.</p> 
+                    <p><strong>Requisitos:</strong> Experiencia en marketing digital, conocimiento de herramientas de análisis, creatividad.</p> 
+                    <p><strong>Ubicación:</strong> Remoto</p> 
+                    <p><strong>Cómo aplicar:</strong> Envía tu CV a <a href="mailto:empleos@gamex.com">empleos@gamex.com</a></p> 
+                </div> 
+            
+                <div class="vacante"> 
+                    <h3>Desarrollador de Juegos</h3> 
+                    <p><strong>Descripción:</strong> Buscamos un desarrollador de juegos con experiencia en la creación de videojuegos para trabajar en nuestros proyectos internos.</p> 
+                    <p><strong>Requisitos:</strong> Conocimiento en programación de juegos, experiencia con motores como Unity o Unreal Engine.</p> 
+                    <p><strong>Ubicación:</strong> Las Palmas de Gran Canaria</p> 
+                    <p><strong>Cómo aplicar:</strong> Envía tu CV a <a href="mailto:empleos@gamex.com">empleos@gamex.com</a></p> 
+                </div> 
+            </section>
+    </main>
+    <!-- Site footer -->
+    <footer>
+        <p>&copy; 2024 GAMEX. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script src="/java/java.js"></script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+header {
+    background: #000;
+    color: #ff0000;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 40px;
+    font-family: "Train One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+@keyframes colorChange {
+    0% { color: rgb(255, 0, 0); }
+    25% { color: rgb(0, 247, 255); }
+    50% { color: rgb(0, 255, 0); }
+    75% { color: rgb(255, 255, 0); }
+    100% { color: rgb(255, 0, 0); }
+}    
+hhead{
+    animation: colorChange 10s infinite;
+}
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav button {
+    background: #9e0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.9s, font-size 0.9s;
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav button:hover {
+    background: #777;
+    font-size: 20px;
+    transition: background 0.5s;
+}
+main {
+    padding: 20px;
+}
+
+.content-section {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-image: url(./fondo.png);
+    background-size: cover;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-style: oblique;
+}
+.offer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.offer-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.offer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+    padding: 0 10px;
+    text-align: center;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.event {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 15px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    display: inline-block;
+}
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border-color: #007BFF;
+}
+.event img {
+    width: 300px;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.event img:hover {
+    transform: scale(1.05);
+}
+.event h3 {
+    color: #007BFF;
+    margin: 10px 0;
+}
+.details {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.details strong {
+    color: #333;
+}
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.map-container {
+    margin-top: 20px;
+    text-align: center;
+}
+h5{
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.vacante {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #f9f9f9;
+    display: ruby-base;
+}
+
+.vacante h3 {
+    color: #333;
+}
+
+.vacante p {
+    color: #555;
+}
+@keyframes backgroundchange {
+    0% { background-color: rgb(184, 2, 2); }
+    25% { background-color: rgb(0, 0, 0); }
+    50% { background-color: rgb(179, 3, 3); }
+    75% { background-color: rgb(0, 0, 0); }
+    100% { background-color: rgb(189, 2, 2); }
+    }
+.active-button {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    animation: backgroundchange 5s infinite alternate;
+}
+
+/* Media Queries para Responsividad */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .offer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .game-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .event {
+        width: 250px;
+    }
+
+    .event img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 350px;
+    }
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav button {
+        padding: 8px 12px;
+        font-size: 12px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .content-section {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h5 {
+        font-size: 24px;
+        padding: 8px 0;
+    }
+
+    .offer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card {
+        width: 90%;
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .game-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .game-card {
+        max-width: 100%;
+    }
+
+    .event {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    .event img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .vacante {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .vacante h3 {
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 5px 0;
+        font-size: 14px;
+    }
+}
+
+/* Pequeños móviles */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    nav button {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    .offer-card {
+        width: 95%;
+        padding: 8px;
+    }
+
+    .event {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .event img {
+        height: 150px;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+}
+
+  
