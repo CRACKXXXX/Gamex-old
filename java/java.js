@@ -16,7 +16,7 @@ function showSection(sectionId) {
         return; // Salir de la función si no se encuentra la sección
     }
 
-    // Cambiar el estado de los botones
+    // Change the state of the buttons
     const buttons = document.querySelectorAll('nav button');
     buttons.forEach(button => {
         button.classList.remove('active-button'); // Exit the function if the section is not found
