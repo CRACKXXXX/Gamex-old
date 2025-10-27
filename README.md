@@ -47,7 +47,7 @@ Para publicar la web en línea, se puede usar **GitHub Pages**:
 
 ---
 
-## Construido con :tools:
+## Construido con
 
 - HTML
 - CSS
