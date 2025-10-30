@@ -1,61 +1,58 @@
-# Gamex - Web de Videojuegos
+# Gamex - Video Game Website 🎮
 
-Es una página web para venta de juegos, torneos y ofertas de juegos, con información sobre ellos y sección online. Sirve para comprar, informarte y explorar muchos juegos diferentes.
-
----
-
-## Comenzando :rocket:
-
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
-
-Mira Deployment para conocer como desplegar el proyecto.
+This project is a website for **selling games, tournaments, and game offers**, providing information about games and an online section. It allows users to **buy, get informed, and explore many different games**.
 
 ---
 
-## Pre-requisitos :clipboard:
+## Getting Started 🚀
 
-- Un navegador moderno (Chrome, Firefox, Edge, etc.)
-- Visual Studio Code
-- Abrir la carpeta del proyecto en VS Code y usar **Live Preview** para ver la web.
+These instructions will get a copy of the project up and running on your local machine for **development and testing purposes**.
 
----
+### Prerequisites 📋
 
-## Ejecución / Demo
+* A **modern browser** (Chrome, Firefox, Edge, etc.)
+* **Visual Studio Code**
+* **Live Preview** extension (or similar) for VS Code is recommended.
 
-Para probar el proyecto:
+### Running / Demo
 
-1. Abrir Visual Studio Code.
-2. Abrir la carpeta del proyecto.
-3. Usar **Live Preview** o abrir `index.html` en el navegador.
-4. Navegar por la web: galería de juegos, torneos, ofertas, y explorar información de cada juego.
+To test the project locally:
 
----
-
-## Ejecutando las pruebas :gear:
-
-No aplica, proyecto sin pruebas automáticas.
+1.  Open **Visual Studio Code**.
+2.  Open the project folder.
+3.  Use **Live Preview** or simply open `index.html` in your browser.
+4.  Navigate through the website: explore the game gallery, check tournaments, view offers, and see the information pages for individual games.
 
 ---
 
-## Despliegue :package:
+## Deployment 📦
 
-Para publicar la web en línea, se puede usar **GitHub Pages**:
+To publish the website online, you can use **GitHub Pages**:
 
-1. Ir a Settings → Pages en el repositorio de GitHub.
-2. Seleccionar Branch: `main`, carpeta raíz (`/`).
-3. Guardar y esperar a que GitHub genere la URL.
-
----
-
-## Construido con
-
-- HTML
-- CSS
-- JavaScript
+1.  Go to **Settings → Pages** in your GitHub repository.
+2.  Under "Source," select **Branch**: `main` (or whichever branch holds your static files) and the folder should be the root (`/`).
+3.  Click **Save** and wait for GitHub to generate the public URL.
 
 ---
 
-## Autores :black_nib:
+## Built With 🛠️
 
-- CRACRKOB - Estudiante de DAM
-- Inspirado : https://dribbble.com/shots/26014508-Petspot-Landing-Page-for-Pet-Shop 
+* **HTML**
+* **CSS**
+* **JavaScript**
+
+---
+
+## Testing ⚙️
+
+This project does not include automated tests.
+
+---
+
+## Authors ✒️
+
+* **CRACRKOB** - *DAM Student*
+
+### Inspiration ✨
+
+* Inspired by: [Petspot - Landing Page for Pet Shop](https://dribbble.com/shots/26014508-Petspot-Landing-Page-for-Pet-Shop)
