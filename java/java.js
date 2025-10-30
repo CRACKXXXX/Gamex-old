@@ -19,7 +19,7 @@ function showSection(sectionId) {
     // Change the state of the buttons
     const buttons = document.querySelectorAll('nav button');
     buttons.forEach(button => {
-        button.classList.remove('active-button'); // Exit the function if the section is not found
+        button.classList.remove('active-button');
     });
 
     // Add the active class to the corresponding button
@@ -31,15 +31,5 @@ function showSection(sectionId) {
     }
 }
 
-    document.addEventListener('scroll', () => {
-        const sections = document.querySelectorAll('.section');
-        const navLinks = document.querySelectorAll('nav ul li a');
-
-        sections.forEach((section, index) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top >= 0 && rect.top < window.innerHeight) {
-                navLinks.forEach(link => link.classList.remove('active'));
-                navLinks[index].classList.add('active');
-            }
-        });
-    });
+// Initialize the page by showing the home section and highlighting the corresponding button
+showSection('inicio');
