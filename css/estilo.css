@@ -23,11 +23,9 @@ header {
     75% { color: rgb(255, 255, 0); }
     100% { color: rgb(255, 0, 0); }
 }    
-hhead{
-    animation: colorChange 10s infinite;
-}
 h1 {
     margin: 0;
+    animation: colorChange 10s infinite;
 }
 
 nav ul {
