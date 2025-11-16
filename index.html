@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEX</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Train+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>GAMEX</h1>
+        <nav>
+            <ul>
+                <li><button onclick="showSection('inicio')">Home</button></li>
+                <li><button onclick="showSection('juegos')">Nuestros Juegos</button></li>
+                <li><button onclick="showSection('ofertas')">Ofertas</button></li>
+                <li><button onclick="showSection('eventos')">Eventos</button></li>
+                <li><button onclick="showSection('contacto')">Contacto</button></li>
+                <li><button onclick="showSection('empleos')">Empleos</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="content-section">
+            <h2>🎮 Bienvenido al Universo GAMEX: Tu Portal Gamer en Canarias</h2>
+            <p>Descubre los últimos lanzamientos, los clásicos inmortales y el mejor equipo para tu setup. En GAMEX, no
+                solo vendemos videojuegos; somos el punto de encuentro para la pasión gamer que une a todas las Islas
+                Canarias.</p>
+
+            <hr>
+            <h3>📜 Nuestra Historia: Una Pasión Desde 2024</h3>
+            <p>Fundada en 2024, GAMEX nació de la visión de crear un espacio dedicado exclusivamente a la comunidad
+                gamer de Canarias. Desde nuestros humildes comienzos, hemos crecido para convertirnos en el referente
+                regional para videojuegos, consolas y accesorios, siempre priorizando la calidad y la experiencia del
+                cliente.</p>
+
+            <hr>
+            <h3>🛡️ Valores y Compromiso GAMEX</h3>
+            <p>Nuestra filosofía se basa en tres pilares fundamentales que nos diferencian en el sector:</p>
+            <ul>
+                <li><strong>Comunidad y Cercanía:</strong> Priorizamos la relación con nuestros clientes. Queremos que
+                    te sientas como en casa, brindándote una atención personalizada y un espacio donde compartir tu
+                    afición.</li>
+                <li><strong>Calidad y Confianza:</strong> Solo ofrecemos productos de la más alta calidad y trabajamos
+                    con proveedores oficiales. Nuestra promesa es que cada compra en GAMEX es una inversión segura en tu
+                    entretenimiento.</li>
+                <li><strong>Innovación Constante:</strong> Estamos siempre a la vanguardia, no solo con los últimos
+                    juegos y consolas, sino también en tendencias de hardware, eSports y nuevas formas de interactuar
+                    con la comunidad.</li>
+            </ul>
+
+            <hr>
+            <h3>🕹️ Oferta de Productos y Servicios: La Experiencia Completa</h3>
+            <p>Nuestra selección está cuidadosamente curada para satisfacer desde el jugador ocasional hasta el
+                profesional más exigente:</p>
+            <ul>
+                <li><strong>Videojuegos (Físico y Digital):</strong> Catálogo masivo que incluye preventas, ediciones
+                    coleccionista, títulos AAA multiplataforma (PS5, Xbox Series X, Switch, PC) e incluso códigos
+                    digitales para tus plataformas favoritas.</li>
+                <li><strong>Consolas de Última Generación:</strong> Disponibilidad garantizada de las plataformas más
+                    solicitadas y sus modelos especiales, asegurando que siempre tengas acceso a la tecnología más
+                    puntera.</li>
+                <li><strong>Accesorios Premium:</strong> Una gama de accesorios de marcas líderes: mandos élite,
+                    auriculares gaming con sonido envolvente, sillas ergonómicas, y cables de alto rendimiento para
+                    minimizar el input lag.</li>
+                <li><strong>Merchandising y Coleccionables:</strong> La mayor variedad de figuras Funko Pop, estatuas de
+                    edición limitada, réplicas, ropa oficial y coleccionables para que decores tu espacio con orgullo.
+                </li>
+            </ul>
+
+            <h4>El Rincón Retro y Coleccionismo 👾</h4>
+            <p>Para los nostálgicos, GAMEX dedica un espacio especial a la historia del gaming. En nuestro Rincón Retro
+                encontrarás una selección rotativa de consolas clásicas (NES, SNES, Dreamcast, PS2), juegos de segunda
+                mano revisados y accesorios difíciles de encontrar. ¡Es el lugar perfecto para revivir tu infancia o
+                descubrir joyas atemporales!</p>
+
+            <h4>Servicio Técnico y Garantía Extendida 🛠️</h4>
+            <p>No solo vendemos, también cuidamos tu equipo. Nuestro Servicio Técnico Especializado en consolas y
+                periféricos ofrece diagnósticos rápidos y reparaciones con componentes originales. Además, ofrecemos
+                opciones de Garantía Extendida para que juegues con total tranquilidad.</p>
+
+            <hr>
+            <h3>🏆 Compromiso con la Comunidad y Eventos</h3>
+            <ul>
+                <li><strong>Torneos Locales de eSports:</strong> Organizamos competiciones mensuales de títulos
+                    populares (FIFA, League of Legends, Smash Bros.) con premios y la oportunidad de clasificar a
+                    eventos regionales.</li>
+                <li><strong>Noches de Juego Abiertas:</strong> Únete a nuestras quedadas casuales. Una oportunidad
+                    perfecta para probar juegos nuevos, participar en partidas multijugador y conocer a la comunidad
+                    gamer de la isla.</li>
+                <li><strong>Eventos de Lanzamiento:</strong> Sé el primero en tener los títulos más esperados. Nuestros
+                    eventos de medianoche incluyen regalos, concursos y un ambiente festivo inigualable.</li>
+            </ul>
+
+            <hr>
+            <h3>📍 Visítanos: Tu Siguiente Nivel de Juego Te Espera</h3>
+            <p>Te invitamos a vivir la experiencia GAMEX en nuestra tienda principal. Estamos ubicados en un punto
+                céntrico y accesible, listos para recibirte:</p>
+            <p class="strong-location"><strong>Calle Triana, 91, 35002 Las Palmas de Gran Canaria, Las Palmas.</strong>
+            </p>
+            <p>Aunque nos encanta verte en persona, nuestra tienda en línea está abierta 24/7 con envíos rápidos a todas
+                las Islas Canarias. ¡Pide hoy y recibe tu juego mañana!</p>
+
+            <div class="contact-info">
+                <p>Para consultas, pedidos especiales o soporte:</p>
+                <p>📧 Email de Soporte: <strong>GAMEX@gmail.com</strong></p>
+                <p>📞 Teléfono (Llamadas y WhatsApp): <strong>691 77 11 22</strong></p>
+            </div>
+
+            <hr>
+            <h3>👥 Nuestra Comunidad Gamer: El Corazón de GAMEX</h3>
+            <p>En GAMEX, no somos solo una tienda; somos una familia de apasionados por los videojuegos. Nuestra comunidad se extiende por todas las Islas Canarias, uniendo a jugadores de todas las edades y niveles. Organizamos encuentros mensuales donde compartimos experiencias, descubrimos nuevos títulos y formamos alianzas estratégicas en juegos multijugador. Creemos que el gaming es más que entretenimiento: es una forma de conectar, aprender y crecer juntos.</p>
+            <p>Únete a nuestro foro en línea, donde discutimos estrategias, compartimos guías y organizamos eventos virtuales. Además, tenemos un programa de fidelidad que recompensa a nuestros clientes más leales con descuentos exclusivos, acceso anticipado a preventas y entradas gratuitas a nuestros torneos. ¡Tu pasión por los juegos te espera aquí!</p>
+
+            <hr>
+            <h3>📈 Tendencias en Gaming: Lo Último y Lo Próximo</h3>
+            <p>El mundo del gaming evoluciona constantemente, y en GAMEX estamos siempre un paso adelante. Actualmente, vemos un auge en los juegos de realidad virtual y aumentada, con títulos como Half-Life: Alyx y Pokémon GO liderando la carga. La nube gaming está democratizando el acceso a experiencias de alta calidad, permitiendo jugar AAA en dispositivos modestos. Además, el metaverso gaming está emergiendo, con mundos virtuales donde los jugadores pueden socializar, trabajar y crear.</p>
+            <p>Mantente informado con nuestras newsletters semanales, donde analizamos las últimas tendencias, reseñamos nuevos lanzamientos y te damos consejos para optimizar tu setup. Desde esports profesionales hasta juegos indie innovadores, GAMEX te mantiene al día con lo que importa en el universo gamer.</p>
+
+            <hr>
+            <h3>💬 Testimonios de Clientes: Lo Que Dicen Nuestros Gamers</h3>
+            <p>No nos creas solo a nosotros; escucha a quienes han vivido la experiencia GAMEX:</p>
+            <blockquote>"GAMEX transformó mi setup gaming. Sus consejos me ayudaron a elegir la consola perfecta, y el servicio técnico me salvó cuando mi mando falló. ¡Son los mejores!" - Juan Pérez, Tenerife</blockquote>
+            <blockquote>"Como madre de un adolescente gamer, aprecio cómo GAMEX fomenta la comunidad sana. Los eventos son divertidos y seguros para toda la familia." - María López, Gran Canaria</blockquote>
+            <blockquote>"He comprado aquí desde que abrieron. Su selección de juegos retro es incomparable, y siempre me tratan como un amigo." - Carlos Rodríguez, Lanzarote</blockquote>
+            <p>Estos testimonios reflejan nuestro compromiso con la satisfacción del cliente. ¡Únete a miles de gamers felices y comparte tu historia con nosotros!</p>
+
+            <hr>
+            <h3>🚀 Futuros Planes: Lo Que Viene en GAMEX</h3>
+            <p>El futuro de GAMEX es brillante y lleno de innovación. Estamos expandiendo nuestra presencia en línea con una app móvil que permitirá compras rápidas, seguimiento de pedidos en tiempo real y acceso a contenido exclusivo. Planeamos abrir sucursales en otras islas, llevando la experiencia GAMEX a más comunidades gamer.</p>
+            <p>Además, estamos desarrollando un centro de formación en gaming, donde impartiremos cursos sobre diseño de juegos, streaming profesional y esports. Nuestro objetivo es no solo vender productos, sino empoderar a la próxima generación de creadores y jugadores. ¡Mantente atento, porque GAMEX está a punto de subir de nivel!</p>
+        </section>
+
+        <section id="juegos" class="content-section" style="display: none;">
+            <h5>Nuestros Juegos</h5>
+            <form id="productForm" onsubmit="addProduct(event)">
+                <label for="productName">Nombre del Producto:</label>
+                <input type="text" id="productName" placeholder="Ingresa el nombre del producto" required>
+                <label for="productPrice">Precio:</label>
+                <input type="number" id="productPrice" placeholder="Ingresa el precio" step="0.01" required>
+                <label for="productDescription">Descripción:</label>
+                <textarea id="productDescription" placeholder="Ingresa la descripción del producto" required></textarea>
+                <button type="submit">Agregar Producto</button>
+            </form>
+            <div id="products-list" class="game-container"></div>
+            <div class="game-container">
+                <div class="game-card">
+                    <h3>The Legend of Zelda: Tears of the Kingdom</h3>
+                    <img src="./img/zelda-image.jpg" alt="The Legend of Zelda: Tears of the Kingdom" class="game-image">
+                    <p><strong>Platform:</strong> Nintendo Switch</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> The sequel to "Breath of the Wild" offers an expansive world full
+                        of adventures, puzzles, and a deep narrative following Link on his mission to save Hyrule.</p>
+                </div>
+                <div class="game-card">
+                    <h3><span class="notranslate">Baldur's Gate 3</span></h3>
+                    <img src="./img/baldurs-gate-image.jpg" alt="Baldur's Gate 3" class="game-image">
+                    <p><strong>Platform:</strong> PC, PS5</p>
+                    <p><strong>Price:</strong> $59.99</p>
+                    <p><strong>Description:</strong> <span class="notranslate">A Baldur's Gate RPG</span> based on the
+                        famous <span class="notranslate">Dungeons & Dragons</span> series, where player choices affect
+                        the story and character development.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Call of Duty: Modern Warfare II</h3>
+                    <img src="./img/call-of-duty-image.jpg" alt="Call of Duty: Modern Warfare II" class="game-image">
+                    <p><strong>Platform:</strong> PC, PS4, PS5, Xbox One, Xbox Series X/S</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> The latest installment in the popular shooter franchise, with an
+                        exciting campaign mode and addictive multiplayer.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Starfield</h3>
+                    <img src="./img/starfield-image.jpg" alt="Starfield" class="game-image">
+                    <p><strong>Platform:</strong> PC, Xbox Series X/S</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> A space RPG from Bethesda that allows players to explore a vast
+                        universe, customize ships, and engage in interstellar combat.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Spider-Man 2</h3>
+                    <img src="./img/spiderman-image.jpg" alt="Spider-Man 2" class="game-image">
+                    <p><strong>Platform:</strong> PS5</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> The sequel to the acclaimed action game, where players can switch
+                        between Peter Parker and Miles Morales while fighting iconic villains.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Mortal Kombat 1</h3>
+                    <img src="./img/imagen_mortal_kombat.jpg" alt="Mortal Kombat 1" class="game-image">
+                    <p><strong>Platform:</strong> PC, PS5, Xbox Series X/S, Nintendo Switch</p>
+                    <p><strong>Price:</strong> $69.99</p>
+                    <p><strong>Description:</strong> The latest entry in the famous fighting saga, featuring new
+                        characters and improved combat mechanics.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Final Fantasy XVI</h3>
+                    <img src="./img/final-fantasy-image.jpg" alt="Final Fantasy XVI" class="game-image">
+                    <p><strong>Plataforma:</strong> PS5, PC</p>
+                    <p><strong>Precio:</strong> $69.99</p>
+                    <p><strong>Descripción:</strong> La última entrega de la icónica serie de RPG, que presenta un mundo
+                        vasto y una narrativa épica centrada en la lucha por el control de los Eikons y el destino de
+                        los reinos.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Hogwarts Legacy</h3>
+                    <img src="./img/hogwarts-legacy-image.jpg" alt="Hogwarts Legacy" class="game-image">
+                    <p><strong>Plataforma:</strong> PC, PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch</p>
+                    <p><strong>Precio:</strong> $59.99</p>
+                    <p><strong>Descripción:</strong> Un juego de rol de acción ambientado en el mundo mágico de Harry
+                        Potter, donde los jugadores pueden explorar Hogwarts y sus alrededores mientras desarrollan sus
+                        habilidades mágicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas" class="content-section" style="display: none;">
+            <h5>Ofertas</h5>
+            <p>No te pierdas nuestras increíbles ofertas:</p>
+
+            <h3>Top 3 Favoritos</h3>
+            <div class="offer-container">
+                <div class="offer-card">
+                    <h4>The Legend of Zelda: Tears of the Kingdom</h4>
+                    <p><strong>Precio original:</strong> $69.99</p>
+                    <p><strong>Oferta:</strong> $55.99 (20% de descuento)</p>
+                    <img src="./img/zelda-image.jpg" alt="The Legend of Zelda: Tears of the Kingdom"
+                        class="offer-image">
+                </div>
+                <div class="offer-card">
+                    <h4><span class="notranslate">Baldur's Gate 3</span></h4>
+                    <p><strong>Precio original:</strong> $59.99</p>
+                    <p><strong>Oferta:</strong> $41.99 (30% de descuento)</p>
+                    <img src="./img/baldurs-gate-image.jpg" alt="Baldur's Gate 3" class="offer-image">
+                </div>
+                <div class="offer-card">
+                    <h4>Resident Evil 4 (Remake)</h4>
+                    <p><strong>Precio original:</strong> $59.99</p>
+                    <p><strong>Oferta:</strong> $47.99 (20% de descuento)</p>
+                    <img src="./img/resident-evil-image.jpg" alt="Resident Evil 4 (Remake)" class="offer-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="content-section" style="display: none;">
+            <h5>Eventos de Videojuegos 2025</h5>
+
+            <div class="event">
+                <h3>Torneo de Super Smash Bros. Ultimate</h3>
+                <img src="./img/smash-bros-tournament.jpg" alt="Torneo de Smash Bros">
+                <div class="details">
+                    <strong>Fecha:</strong> Sábado, 22 de marzo de 2025<br>
+                    <strong>Horario:</strong> 14:00 - 18:00<br>
+                    <strong>Precio de Entrada:</strong> $10<br>
+                    <strong>Precio de Participación:</strong> $20<br>
+                    <strong>Detalles:</strong> Compite contra otros jugadores en este emocionante torneo. Se premiará a
+                    los tres primeros lugares con trofeos y premios en efectivo. ¡Inscríbete antes de que se agoten los
+                    lugares!
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+
+            <div class="event">
+                <h3>Maratón de Juegos Retro</h3>
+                <img src="./img/retro-games.jpg" alt="Maratón de Juegos Retro">
+                <div class="details">
+                    <strong>Fecha:</strong> Domingo, 30 de marzo de 2025<br>
+                    <strong>Horario:</strong> 10:00 - 20:00<br>
+                    <strong>Precio de Entrada:</strong> $5<br>
+                    <strong>Precio de Participación:</strong> Gratis (solo para jugar)<br>
+                    <strong>Detalles:</strong> Un día completo dedicado a los clásicos. Ven a disfrutar de juegos retro
+                    en consolas clásicas y participa en concursos de puntuación. Habrá premios para los mejores
+                    jugadores.
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+
+            <div class="event">
+                <h3>Torneo de League of Legends</h3>
+                <img src="./img/league-of-legends-tournament.jpg" alt="Torneo de League of Legends">
+                <div class="details">
+                    <strong>Fecha:</strong> Sábado, 7 de junio de 2025<br>
+                    <strong>Horario:</strong> 16:00 - 22:00<br>
+                    <strong>Precio de Entrada:</strong> $15<br>
+                    <strong>Precio de Participación:</strong> $30 por equipo<br>
+                    <strong>Detalles:</strong> Forma tu equipo y compite en este torneo de League of Legends. Los
+                    ganadores recibirán premios en efectivo y artículos del juego. ¡No te lo pierdas!
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+
+            <div class="event">
+                <h3>Noche de Juegos de Mesa y Videojuegos</h3>
+                <img src="./img/game-night.jpg" alt="Noche de Juegos">
+                <div class="details">
+                    <strong>Fecha:</strong> Viernes, 12 de septiembre de 2025<br>
+                    <strong>Horario:</strong> 18:00 - 23:00<br>
+                    <strong>Precio de Entrada:</strong> $7<br>
+                    <strong>Precio de Participación:</strong> Gratis (para jugar)<br>
+                    <strong>Detalles:</strong> Disfruta de una noche de diversión con videojuegos y juegos de mesa.
+                    Habrá diferentes estaciones con juegos populares y un área para torneos informales.
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+
+            <div class="event">
+                <h3>Campeonato de Fortnite</h3>
+                <img src="./img/fortnite-championship.jpg" alt="Campeonato de Fortnite">
+                <div class="details">
+                    <strong>Fecha:</strong> Domingo, 19 de octubre de 2025<br>
+                    <strong>Horario:</strong> 15:00 - 19:00<br>
+                    <strong>Precio de Entrada:</strong> $10<br>
+                    <strong>Precio de Participación:</strong> $20<br>
+                    <strong>Detalles:</strong> Demuestra tus habilidades en este campeonato de Fortnite. Los
+                    participantes competirán en varias rondas y los mejores recibirán premios en efectivo y artículos
+                    exclusivos del juego.
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+
+            <div class="event">
+                <h3>Campeonato de Valorant</h3>
+                <img src="./img/valorant-championship.jpg" alt="Campeonato de Valorant">
+                <div class="details">
+                    <strong>Fecha:</strong> Domingo, 12 de abril de 2025<br>
+                    <strong>Horario:</strong> 15:00 - 19:00<br>
+                    <strong>Precio de Entrada:</strong> $10<br>
+                    <strong>Precio de Participación:</strong> $20<br>
+                    <strong>Detalles:</strong> Demuestra tus habilidades en este emocionante campeonato de Valorant. Los
+                    mejores equipos se llevarán premios y reconocimiento.
+                </div>
+                <a href="https://forms.gle/AhPFbSdPbgbJ5GhJA" class="btn" target="_blank">Inscribirse</a>
+            </div>
+
+        </section>
+
+        <section id="contacto" class="content-section" style="display: none;">
+            <h5>Contáctanos</h5>
+            <div class="contact-info">
+                <p>¿Tienes alguna pregunta o necesitas más información? ¡Estamos aquí para ayudarte! Puedes ponerte en
+                    contacto con nosotros a través de los siguientes medios:</p>
+
+                <strong>Dirección:</strong><br>
+                Calle Triana, 91<br>
+                35002 Las Palmas de Gran Canaria, Las Palmas<br><br>
+
+                <strong>Correo Electrónico:</strong><br>
+                <a href="mailto:GAMEX@gmail.com">GAMEX@gmail.com</a><br><br>
+
+                <strong>Teléfono:</strong><br>
+                📞 691 77 11 22<br><br>
+
+                <strong>Horario de Atención:</strong><br>
+                Lunes a Viernes: 9:00 AM - 6:00 PM<br>
+                Sábados: 10:00 AM - 2:00 PM
+            </div>
+
+            <div class="form-container">
+                <h3>Envíanos un Mensaje</h3>
+                <form id="contactForm" onsubmit="validateForm(event)">
+                    <p>
+                        <label for="fullName">Nombre y Apellidos:</label>
+                        <input type="text" id="fullName" name="fullName">
+                        <span id="fullNameError" class="error-message"></span>
+                    </p>
+                    <p>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="text" id="email" name="email">
+                        <span id="emailError" class="error-message"></span>
+                    </p>
+                    <p>
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject">
+                        <span id="subjectError" class="error-message"></span>
+                    </p>
+                    <p>
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message"></textarea>
+                        <span id="messageError" class="error-message"></span>
+                    </p>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div class="map-container">
+                <h2>Encuéntranos en el Mapa</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d219.95586295570152!2d-15.417028809797868!3d28.10707630834215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1731577935311!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+        <section id="empleos" class="content-section" style="display: none;">
+            <h5>Únete a Nuestro Equipo y Forma Parte de GAMEX</h5>
+            <p>En GAMEX, creemos que el talento apasionado por los videojuegos es la clave de nuestro éxito.
+                Si buscas un entorno dinámico donde puedas crecer profesionalmente mientras disfrutas de tu pasión,
+                ¡esta es tu oportunidad! Aquí están nuestras vacantes actuales:</p>
+
+            <div class="vacante">
+                <h3>Desarrollador Front-End HTML/CSS</h3>
+                <p>Descripción: Estamos buscando un Desarrollador Front-End especializado en HTML y CSS
+                    para unirse a nuestro equipo creativo. Serás responsable de crear interfaces de usuario atractivas y
+                    responsivas para nuestros sitios web y aplicaciones, asegurando una experiencia de usuario
+                    excepcional. Colaborarás con diseñadores y desarrolladores back-end para implementar diseños
+                    pixel-perfect, optimizar el rendimiento y mantener estándares web modernos.</p>
+                <p>Requisitos: Experiencia sólida en HTML5 y CSS3, incluyendo Flexbox y Grid;
+                    conocimientos en preprocesadores como Sass; familiaridad con herramientas de control de versiones
+                    como Git; pasión por el diseño web y la accesibilidad; capacidad para trabajar en proyectos
+                    colaborativos.</p>
+                <p>Ubicación: Las Palmas de Gran Canaria</p>
+                <p>Cómo aplicar: Envía tu CV y un enlace a tu portafolio o proyectos en línea a <a
+                        href="mailto:empleos@gamex.com">empleos@gamex.com</a>
+                </p>
+            </div>
+
+            <div class="vacante">
+                <h3>Desarrollador Web Junior</h3>
+                <p>Descripción: Buscamos un Desarrollador Web Junior apasionado por la tecnología y los
+                    videojuegos para unirse a nuestro equipo de desarrollo. Serás responsable de crear y mantener sitios
+                    web responsivos, colaborar estrechamente con el equipo de diseño para implementar interfaces
+                    atractivas, y asegurar que el código sea limpio, eficiente y escalable. Esta es una oportunidad
+                    perfecta para crecer en un entorno dinámico y aprender de proyectos innovadores.</p>
+                <p>Requisitos: Conocimientos básicos en HTML, CSS y JavaScript; experiencia con
+                    frameworks como React o Vue.js es un plus; pasión por los videojuegos y el desarrollo web; capacidad
+                    para trabajar en equipo y aprender rápidamente.</p>
+                <p>Ubicación: Las Palmas de Gran Canaria</p>
+                <p>Cómo aplicar: Envía tu CV y un enlace a tu portafolio a <a
+                        href="mailto:empleos@gamex.com">empleos@gamex.com</a>
+                </p>
+            </div>
+
+            <div class="vacante">
+                <h3>Diseñador Gráfico</h3>
+                <p>Descripción: Estamos en busca de un Diseñador Gráfico creativo y apasionado por los
+                    videojuegos para unirse a nuestro equipo. Serás el encargado de diseñar assets visuales impactantes
+                    para nuestras redes sociales, crear banners atractivos para campañas promocionales, y desarrollar
+                    elementos gráficos que refuercen la identidad de GAMEX. Tu trabajo contribuirá a hacer que nuestra
+                    marca sea inolvidable en la comunidad gamer.</p>
+                <p>Requisitos: Experiencia en diseño gráfico con herramientas como Adobe Creative Suite
+                    (Photoshop, Illustrator); portafolio con trabajos previos en diseño digital; pasión por los
+                    videojuegos y la cultura pop; capacidad para trabajar bajo plazos ajustados y colaborar en equipo.
+                </p>
+                <p>Ubicación: Las Palmas de Gran Canaria</p>
+                <p>Cómo aplicar: Envía tu CV y un enlace a tu portafolio a <a
+                        href="mailto:empleos@gamex.com">empleos@gamex.com</a>
+                </p>
+            </div>
+
+            <div class="vacante">
+                <h3>Especialista en Atención al Cliente</h3>
+                <p>Descripción: Buscamos un Especialista en Atención al Cliente apasionado por los videojuegos para unirse a nuestro equipo de servicio. Serás el puente entre GAMEX y nuestros clientes, resolviendo consultas, procesando pedidos y ofreciendo recomendaciones personalizadas sobre juegos y accesorios. Tu entusiasmo por el gaming hará que cada interacción sea memorable y positiva.</p>
+                <p>Requisitos: Experiencia en atención al cliente, preferiblemente en retail; conocimientos básicos de videojuegos y consolas; habilidades de comunicación excelentes; capacidad para trabajar bajo presión y resolver problemas rápidamente; pasión por ayudar a otros gamers.</p>
+                <p>Ubicación: Las Palmas de Gran Canaria</p>
+                <p>Cómo aplicar: Envía tu CV y una carta de motivación a <a href="mailto:empleos@gamex.com">empleos@gamex.com</a></p>
+            </div>
+
+            <div class="vacante">
+                <h3>Gerente de Tienda</h3>
+                <p>Descripción: Estamos buscando un Gerente de Tienda con experiencia en retail y amor por los videojuegos para liderar nuestras operaciones diarias. Serás responsable de gestionar el inventario, supervisar al equipo, asegurar la satisfacción del cliente y contribuir a la estrategia de ventas. Tu visión ayudará a GAMEX a crecer como el referente gamer en Canarias.</p>
+                <p>Requisitos: Experiencia previa en gestión de tienda o retail; conocimientos en gestión de inventario y ventas; habilidades de liderazgo y motivación de equipos; familiaridad con el sector gaming es un plus; capacidad para trabajar horarios flexibles incluyendo fines de semana.</p>
+                <p>Ubicación: Las Palmas de Gran Canaria</p>
+                <p>Cómo aplicar: Envía tu CV y referencias laborales a <a href="mailto:empleos@gamex.com">empleos@gamex.com</a></p>
+            </div>
+
+            <div class="vacante">
+                <h3>Técnico de Reparaciones</h3>
+                <p>Descripción: Únete a nuestro equipo técnico como Técnico de Reparaciones especializado en consolas y accesorios gaming. Serás responsable de diagnosticar y reparar equipos, ofrecer mantenimiento preventivo y asesorar a clientes sobre optimización de hardware. Tu expertise mantendrá a nuestros gamers jugando sin interrupciones.</p>
+                <p>Requisitos: Experiencia en reparación de electrónicos, preferiblemente consolas y periféricos gaming; conocimientos en soldadura, circuitos y software de diagnóstico; certificaciones en reparación de hardware son un plus; pasión por la tecnología y los videojuegos; capacidad para trabajar de manera independiente y en equipo.</p>
+                <p>Ubicación: Las Palmas de Gran Canaria</p>
+                <p>Cómo aplicar: Envía tu CV, certificaciones y ejemplos de reparaciones previas a <a href="mailto:empleos@gamex.com">empleos@gamex.com</a></p>
+            </div>
+
+            <div class="vacante">
+                <h3>Community Manager</h3>
+                <p>Descripción: Buscamos un Community Manager creativo y apasionado por los videojuegos para gestionar nuestras redes sociales y comunidad online. Serás responsable de crear contenido engaging, interactuar con seguidores, organizar eventos virtuales y fortalecer la presencia de GAMEX en la comunidad gamer. Tu voz será la de GAMEX en el mundo digital.</p>
+                <p>Requisitos: Experiencia en gestión de redes sociales y community management; conocimientos en herramientas de diseño gráfico y edición de video; pasión por los videojuegos y la cultura gamer; habilidades de escritura y comunicación; capacidad para analizar métricas y optimizar estrategias de engagement.</p>
+                <p>Ubicación: Las Palmas de Gran Canaria (con posibilidad de trabajo remoto parcial)</p>
+                <p>Cómo aplicar: Envía tu CV, enlaces a perfiles sociales gestionados y ejemplos de contenido creado a <a href="mailto:empleos@gamex.com">empleos@gamex.com</a></p>
+            </div>
+
+            <div class="vacante">
+                <h3>Analista de Ventas</h3>
+                <p>Descripción: Estamos en busca de un Analista de Ventas con mente analítica y amor por los datos para unirse a nuestro equipo. Serás responsable de analizar tendencias de ventas, identificar oportunidades de crecimiento, elaborar informes y colaborar en estrategias de marketing. Tu trabajo ayudará a GAMEX a optimizar sus operaciones y expandir su alcance en el mercado gamer.</p>
+                <p>Requisitos: Experiencia en análisis de datos y ventas; conocimientos en herramientas como Excel, Google Analytics y CRM; habilidades en interpretación de métricas y elaboración de informes; interés en la industria del gaming; capacidad para trabajar con deadlines y comunicar insights de manera clara.</p>
+                <p>Ubicación: Las Palmas de Gran Canaria</p>
+                <p>Cómo aplicar: Envía tu CV y un ejemplo de análisis o informe realizado a <a href="mailto:empleos@gamex.com">empleos@gamex.com</a></p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="parallax-container">
+            <div class="parallax-layer parallax-background">
+                <img src="./img/background.png" alt="Galaxia">
+            </div>
+            <div class="parallax-layer parallax-meteor">
+                <img src="./img/meteor-image.png" alt="Meteorito">
+            </div>
+            <p class="footer-text">© 2024-2025 GAMEX. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="./javascript/javascript.js"></script>
+</body>
+
+</html>
