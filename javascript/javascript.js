@@ -3,7 +3,6 @@ const NAV_BUTTONS = document.querySelectorAll('nav button');
 const PARALLAX_METEOR = document.querySelector('.parallax-meteor');
 const MAX_RANGE_PIXELS = 100; // Maximum displacement in pixels
 
-
 // Global array for product list
 let productList = [];
 
