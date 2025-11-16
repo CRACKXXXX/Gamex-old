@@ -55,4 +55,4 @@ This project does not include automated tests.
 
 ### Inspiration ✨
 
-* Inspired by: [Petspot - Landing Page for Pet Shop](https://dribbble.com/shots/26014508-Petspot-Landing-Page-for-Pet-Shop)
+* Inspired by: [Petspot - Landing Page for Pet Shop](https://dribbble.com/shots/26014508-Petspot-Landing-Page-for-Pet-Shop).
