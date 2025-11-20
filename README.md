@@ -20,7 +20,7 @@ To test the project locally:
 
 1.  Open **Visual Studio Code**.
 2.  Open the project folder.
-3.  Use **Live Preview** or simply open `cuerpo.html` in your browser.
+3.  Use **Live Preview** or simply open `index.html` in your browser.
 4.  Navigate through the website: explore the game gallery, check tournaments, view offers, and see the information pages for individual games.
 
 ---
@@ -51,7 +51,7 @@ This project does not include automated tests.
 
 ## Authors ✒️
 
-* **CRACRKOB** - *DAM Student*
+* **CRACRKOB** - *1CFGS DAM Student*
 
 ### Inspiration ✨
 
