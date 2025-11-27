@@ -5,8 +5,19 @@ body {
     background-color: #000;
 }
 
+#scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: linear-gradient(to right, #ffcccc, #990000);
+    z-index: 1000;
+    transition: width 0.3s ease;
+}
+
 header {
-    background: #000;
+    background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
     color: #ff0000;
     padding: 10px 0;
     text-align: center;
@@ -15,33 +26,132 @@ header {
     font-family: "Train One", system-ui;
     font-weight: 400;
     font-style: normal;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 42px;
+    background: linear-gradient(90deg, #ff0000, #cc0000, #990000, #ff3333, #ff6666, #ff0000);
+    z-index: -1;
+    animation: borderTravel 8s linear infinite;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgb(255, 0, 0), transparent);
+    animation: headerGlow 8s infinite;
+}
+
+@keyframes headerGlow {
+    0% {
+        left: -100%;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes buttonGlowSync {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @keyframes colorChange {
     0% {
         color: rgb(255, 0, 0);
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
     }
 
     25% {
         color: rgb(0, 247, 255);
+        text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff, 0 0 40px #00f7ff;
     }
 
     50% {
         color: rgb(0, 255, 0);
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
     }
 
     75% {
         color: rgb(255, 255, 0);
+        text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00, 0 0 40px #ffff00;
     }
 
     100% {
         color: rgb(255, 0, 0);
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
     }
 }
 
 h1 {
     margin: 0;
-    animation: colorChange 10s infinite;
+    animation: colorChange 10s infinite, pulse 2s infinite;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes borderTravel {
+    0% {
+        background: linear-gradient(0deg, #ff0000, #cc0000, #990000, #ff3333, #ff6666, #ff0000);
+    }
+
+    25% {
+        background: linear-gradient(90deg, #ff0000, #cc0000, #990000, #ff3333, #ff6666, #ff0000);
+    }
+
+    50% {
+        background: linear-gradient(180deg, #ff0000, #cc0000, #990000, #ff3333, #ff6666, #ff0000);
+    }
+
+    75% {
+        background: linear-gradient(270deg, #ff0000, #cc0000, #990000, #ff3333, #ff6666, #ff0000);
+    }
+
+    100% {
+        background: linear-gradient(360deg, #ff0000, #cc0000, #990000, #ff3333, #ff6666, #ff0000);
+    }
 }
 
 nav ul {
@@ -54,24 +164,50 @@ nav ul li {
     margin: 0 15px;
 }
 
+@keyframes redShades {
+    0% {
+        background: linear-gradient(135deg, #ff0000, #cc0000);
+    }
+
+    25% {
+        background: linear-gradient(135deg, #cc0000, #990000);
+    }
+
+    50% {
+        background: linear-gradient(135deg, #990000, #ff3333);
+    }
+
+    75% {
+        background: linear-gradient(135deg, #ff3333, #ff6666);
+    }
+
+    100% {
+        background: linear-gradient(135deg, #ff6666, #ff0000);
+    }
+}
+
 nav button {
-    background: #9e0000;
+    background: #ff0000;
     color: #ffffff;
-    border: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.9s, font-size 0.9s;
+    border: none;
+    border-radius: 30px;
     font-family: "Quantico", sans-serif;
     font-weight: 700;
     font-style: normal;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 nav button:hover {
-    background: #777;
-    font-size: 20px;
-    transition: background 0.5s;
+    background: #cc0000;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 1), 0 0 50px rgba(255, 0, 0, 0.8);
+    transform: translateY(-2px);
 }
+
+
 
 main {
     padding: 10px;
@@ -97,13 +233,180 @@ h2 {
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
+    background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
+    color: #ffffff;
+    padding: 40px 20px 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    color: white;
-    font-style: oblique;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff0000, transparent);
+    animation: glow 3s infinite;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    color: #ff0000;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer-section p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff0000;
+    transform: translateX(5px);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: #ff0000;
+    transform: scale(1.2);
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    font-size: 1em;
+}
+
+.newsletter-form input:focus {
+    border-color: #ff0000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 0, 85, 0.5);
+}
+
+.newsletter-form button {
+    padding: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    position: relative;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #cccccc;
+    font-size: 0.9em;
+}
+
+.footer-bottom a {
+    color: #ff0000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+.footer-animation {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff0000, transparent);
+    animation: glow 3s infinite;
+}
+
+@keyframes glow {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 .parallax-container {
@@ -155,7 +458,7 @@ footer {
 }
 
 .offer-card {
-    background-color: #000000;
+    background: linear-gradient(135deg, #000000 0%, #333333 50%, #1a1a1a 100%);
     color: #fff;
     border: 1px solid #ff0000;
     border-radius: 8px;
@@ -190,6 +493,7 @@ footer {
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    margin-bottom: 15px;
 }
 
 .game-card:hover {
@@ -361,7 +665,7 @@ h5 {
     color: #fff;
     margin-bottom: 25px;
     font-family: 'Quantico', sans-serif;
-    border-bottom: 2px solid #ff0055;
+    border-bottom: 2px solid #ff0000;
     padding-bottom: 10px;
 }
 
@@ -393,7 +697,7 @@ h5 {
 
 .form-container input[type="text"]:focus,
 .form-container textarea:focus {
-    border-color: #ff0055;
+    border-color: #ff0000;
     box-shadow: 0 0 5px rgba(255, 0, 85, 0.5);
     outline: none;
 }
@@ -408,7 +712,7 @@ h5 {
     width: 100%;
     padding: 15px;
     margin-top: 30px;
-    background-color: #ff0055;
+    background-color: #ff0000;
     color: white;
     border: none;
     border-radius: 6px;
@@ -417,16 +721,16 @@ h5 {
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px #cc0044;
+    box-shadow: 0 4px #cc0000;
     transition: background-color 0.1s, transform 0.1s, box-shadow 0.1s;
 }
 
 .form-container button[type="submit"]:hover {
-    background-color: #cc0044;
+    background-color: #cc0000;
 }
 
 .form-container button[type="submit"]:active {
-    background-color: #990033;
+    background-color: #990000;
     box-shadow: 0 2px #660022;
     transform: translateY(2px);
 }
@@ -503,6 +807,147 @@ h5 {
     transform: translateY(0);
 }
 
+/* Styles for manage.html */
+#editFormContainer {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ff0000;
+}
+
+#editFormContainer h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#editProductForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#editProductForm label {
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#editProductForm input,
+#editProductForm textarea {
+    padding: 12px;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #292929;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#editProductForm input:focus,
+#editProductForm textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+#editProductForm textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+#editProductForm button {
+    padding: 12px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#editProductForm button:hover {
+    background-color: #660404;
+    transform: translateY(-2px);
+}
+
+#editProductForm button:active {
+    transform: translateY(0);
+}
+
+#editProductForm button[type="button"] {
+    background-color: #666;
+}
+
+#editProductForm button[type="button"]:hover {
+    background-color: #444;
+}
+
+/* Edit and Delete buttons in product cards */
+.game-card button {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.game-card button:hover {
+    background-color: #cc0000;
+}
+
+.game-card button:nth-child(2) {
+    background-color: #666;
+}
+
+.game-card button:nth-child(2):hover {
+    background-color: #444;
+}
+
+.feedbacks-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    will-change: transform;
+    pointer-events: none;
+}
+
+.feedbacks-parallax-meteor {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/meteor-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-50%);
+    z-index: 1;
+    will-change: transform;
+    pointer-events: none;
+}
+
+#feedbacks .game-container {
+    position: relative;
+    z-index: 2;
+}
 
 
 /* Media Queries for Responsiveness */
@@ -510,189 +955,444 @@ h5 {
 /* PC */
 @media (min-width: 1025px) {
 
+    #scroll-progress-bar {
+        height: 6px;
+    }
+
     /* HEADER STYLES */
     header {
-        padding: 10px 0;
+        padding: 15px 0;
+        font-size: 1.3rem;
     }
 
     nav ul li {
-        margin: 0 15px;
+        margin: 0 20px;
         display: inline;
     }
 
     nav button {
-        padding: 10px 15px;
-        font-size: initial;
+        padding: 12px 20px;
+        font-size: 16px;
     }
 
     /* FOOTER STYLES */
     footer {
-        padding: 10px 0;
-        font-size: 16px;
+        padding: 50px 30px 30px;
+    }
+
+    .footer-container {
+        max-width: 1400px;
+        gap: 30px;
+    }
+
+    .footer-section {
+        min-width: 280px;
+    }
+
+    .footer-section h4 {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+
+    .footer-section p {
+        font-size: 1.1em;
+        line-height: 1.7;
+    }
+
+    .social-links {
+        gap: 20px;
+    }
+
+    .social-icon {
+        font-size: 1.8em;
+    }
+
+    .newsletter-form input {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+
+    .newsletter-form button {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+
+    .footer-bottom p {
+        font-size: 1em;
     }
 
     .parallax-container {
-        height: 250px;
+        height: 300px;
     }
 
     .footer-text {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     /* General Layout Adjustments */
     .offer-container {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 20px;
+        padding: 0 40px;
     }
 
     .offer-card {
-        width: 30%;
+        width: 28%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .game-container {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 20px;
+        padding: 0 30px;
+    }
+
+    .event {
+        width: 300px;
+    }
+
+    .event img {
+        width: 300px;
+        height: 210px;
     }
 
     #productForm {
-        max-width: 600px;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Added for home section readability on large screens */
+    #inicio {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.7;
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+
+    #inicio h2 {
+        font-size: 2.4rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #inicio h3 {
+        font-size: 1.8rem;
+        margin-top: 25px;
+        margin-bottom: 12px;
+    }
+
+    #inicio p,
+    #inicio ul,
+    #inicio blockquote {
+        margin-bottom: 16px;
+    }
+
+    #inicio ul li {
+        margin-left: 20px;
+        margin-bottom: 8px;
+    }
+
+    #inicio blockquote {
+        font-style: italic;
+        border-left: 4px solid #ff0000;
+        padding-left: 12px;
+        color: #ddd;
+        background-color: #222;
     }
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
 
+    #scroll-progress-bar {
+        height: 4px;
+    }
+
     /* HEADER STYLES */
+    header {
+        padding: 12px 0;
+        font-size: 1.1rem;
+    }
+
     nav ul li {
-        margin: 0 10px;
+        margin: 0 12px;
     }
 
     nav button {
-        padding: 8px 12px;
-        font-size: 14px;
+        padding: 10px 14px;
+        font-size: 15px;
     }
 
     /* FOOTER STYLES */
     footer {
-        padding: 8px 0;
-        font-size: 15px;
+        padding: 30px 20px 20px;
+    }
+
+    .footer-container {
+        max-width: 1000px;
+        gap: 20px;
+    }
+
+    .footer-section {
+        min-width: 200px;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p {
+        font-size: 0.95em;
+        line-height: 1.6;
+    }
+
+    .social-links {
+        gap: 15px;
+    }
+
+    .social-icon {
+        font-size: 1.4em;
+    }
+
+    .newsletter-form input {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    .newsletter-form button {
+        padding: 10px 15px;
+        font-size: 0.95em;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9em;
     }
 
     .parallax-container {
-        height: 200px;
+        height: 220px;
     }
 
     .footer-text {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     /* General Layout Adjustments */
     .offer-container {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        padding: 0 20px;
     }
 
     .offer-card {
         width: 80%;
-        max-width: 400px;
+        max-width: 420px;
+        padding: 15px;
+        box-sizing: border-box;
     }
 
     .game-container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 15px;
+        padding: 0 20px;
     }
 
     .event {
-        width: 250px;
+        width: 280px;
     }
 
     .event img {
-        width: 250px;
-        height: 150px;
+        width: 280px;
+        height: 170px;
     }
 
     .map-container iframe {
         width: 100%;
-        max-width: 600px;
-        height: 350px;
+        max-width: 640px;
+        height: 360px;
     }
 
     #productForm {
-        max-width: 90%;
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    /* Added for home section on tablets */
+    #inicio {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+        font-size: 1rem;
         padding: 15px;
+    }
+
+    #inicio h2 {
+        font-size: 2rem;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    #inicio h3 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #inicio p,
+    #inicio ul,
+    #inicio blockquote {
+        margin-bottom: 14px;
+    }
+
+    #inicio ul li {
+        margin-left: 18px;
+        margin-bottom: 6px;
+    }
+
+    #inicio blockquote {
+        font-style: italic;
+        border-left: 3px solid #ff4444;
+        padding-left: 10px;
+        color: #eee;
+        background-color: #222;
     }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
 
+    #scroll-progress-bar {
+        height: 3px;
+    }
+
     /* HEADER STYLES */
     header {
-        padding: 5px 0;
+        padding: 8px 0;
+        font-size: 1rem;
+        text-align: center;
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 10px;
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 8px 0;
     }
 
     nav button {
-        padding: 8px 12px;
-        font-size: 12px;
+        padding: 10px 14px;
+        font-size: 14px;
         width: 100%;
-        max-width: 200px;
+        max-width: 220px;
+        border-radius: 8px;
     }
 
     /* FOOTER STYLES */
     footer {
-        padding: 5px 0;
-        font-size: 12px;
+        padding: 20px 15px 15px;
+    }
+
+    .footer-container {
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .footer-section {
+        min-width: 150px;
+    }
+
+    .footer-section h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .footer-section p {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-icon {
+        font-size: 1.2em;
+    }
+
+    .newsletter-form input {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .newsletter-form button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .footer-bottom p {
+        font-size: 0.85em;
     }
 
     .parallax-container {
-        height: 150px;
+        height: 180px;
     }
 
     .footer-text {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     /* General Layout Adjustments */
     main {
-        padding: 10px;
+        padding: 15px 10px;
     }
 
     .content-section {
-        padding: 10px;
+        padding: 15px 10px;
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     h5 {
-        font-size: 24px;
-        padding: 8px 0;
+        font-size: 26px;
+        padding: 10px 0;
     }
 
     .offer-container {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        padding: 0 15px;
     }
 
     .offer-card {
-        width: 90%;
-        max-width: 300px;
-        padding: 10px;
+        width: 95%;
+        max-width: 320px;
+        padding: 15px;
+        box-sizing: border-box;
     }
 
     .game-container {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 15px;
+        padding: 0 15px;
     }
 
     .game-card {
@@ -701,8 +1401,196 @@ h5 {
 
     .event {
         width: 100%;
-        max-width: 300px;
-        margin: 10px 0;
+        max-width: 320px;
+        margin: 15px 0;
+    }
+
+    .event img {
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 280px;
+    }
+
+    .vacante {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .vacante h3 {
+        font-size: 1.3em;
+    }
+
+    #productForm {
+        max-width: 98%;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    #productForm label {
+        font-size: 14px;
+    }
+
+    #productForm input,
+    #productForm textarea {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    #productForm button {
+        padding: 12px 18px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+}
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+
+    #scroll-progress-bar {
+        height: 2px;
+    }
+
+    /* HEADER STYLES */
+    header {
+        padding: 6px 0;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5px;
+    }
+
+    nav ul li {
+        margin: 6px 0;
+    }
+
+    nav button {
+        padding: 8px 12px;
+        font-size: 13px;
+        width: 100%;
+        max-width: 180px;
+        border-radius: 6px;
+    }
+
+    /* FOOTER STYLES */
+    footer {
+        padding: 15px 10px 10px;
+    }
+
+    .footer-container {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .footer-section {
+        min-width: 120px;
+        text-align: center;
+    }
+
+    .footer-section h4 {
+        font-size: 0.9em;
+        margin-bottom: 8px;
+    }
+
+    .footer-section p {
+        font-size: 0.8em;
+        line-height: 1.4;
+    }
+
+    .social-links {
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .social-icon {
+        font-size: 1em;
+    }
+
+    .newsletter-form {
+        align-items: center;
+    }
+
+    .newsletter-form input {
+        padding: 6px;
+        font-size: 0.8em;
+    }
+
+    .newsletter-form button {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8em;
+    }
+
+    .parallax-container {
+        height: 160px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    /* General Layout Adjustments */
+    main {
+        padding: 10px 5px;
+    }
+
+    .content-section {
+        padding: 10px 5px;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    h5 {
+        font-size: 22px;
+        padding: 6px 0;
+    }
+
+    .offer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .offer-card {
+        width: 100%;
+        max-width: 280px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .game-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .game-card {
+        max-width: 100%;
+    }
+
+    .event {
+        width: 100%;
+        max-width: 280px;
+        margin: 12px 0;
     }
 
     .event img {
@@ -713,20 +1601,20 @@ h5 {
 
     .map-container iframe {
         width: 100%;
-        height: 250px;
+        height: 240px;
     }
 
     .vacante {
         padding: 10px;
-        margin: 10px 0;
+        margin: 12px 0;
     }
 
     .vacante h3 {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     #productForm {
-        max-width: 95%;
+        max-width: 100%;
         padding: 10px;
         gap: 10px;
     }
@@ -742,7 +1630,93 @@ h5 {
     }
 
     #productForm button {
-        padding: 10px 15px;
+        padding: 10px 14px;
         font-size: 14px;
+        border-radius: 6px;
+    }
+}
+
+/* Large Screens */
+
+@media (min-width: 1440px) {
+
+
+    /* Styling for FAQ Section consistent with other content sections */
+    #faq h5 {
+        background: #000;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
+
+
+
+    /* HEADER STYLES */
+    header {
+        padding: 20px 0;
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 0 25px;
+    }
+
+    nav button {
+        padding: 14px 24px;
+        font-size: 18px;
+    }
+
+    /* FOOTER STYLES */
+    footer {
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .parallax-container {
+        height: 350px;
+    }
+
+    .footer-text {
+        font-size: 22px;
+    }
+
+    /* General Layout Adjustments */
+    .offer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 30px;
+        padding: 0 60px;
+    }
+
+    .offer-card {
+        width: 25%;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .game-container {
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 30px;
+        padding: 0 40px;
+    }
+
+    .event {
+        width: 350px;
+    }
+
+    .event img {
+        width: 350px;
+        height: 240px;
+    }
+
+    #productForm {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 25px;
     }
 }
