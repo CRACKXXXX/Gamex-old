@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <div id="scroll-progress-bar"></div>
     <header>
         <h1>GAMEX</h1>
         <nav>
@@ -24,6 +25,9 @@
                 <li><button onclick="showSection('eventos')">Eventos</button></li>
                 <li><button onclick="showSection('contacto')">Contacto</button></li>
                 <li><button onclick="showSection('empleos')">Empleos</button></li>
+                <li><button onclick="showSection('faq')">FAQ</button></li>
+                <li><button onclick="showSection('feedbacks')">Feedbacks</button></li>
+                <li><button onclick="showSection('gestionar')">Gestionar Productos</button></li>
             </ul>
         </nav>
     </header>
@@ -34,143 +38,144 @@
             <p>Descubre los últimos lanzamientos, los clásicos inmortales y el mejor equipo para tu setup. En GAMEX, no
                 solo vendemos videojuegos; somos el punto de encuentro para la pasión gamer que une a todas las Islas
                 Canarias.</p>
-
-            <hr>
-            <h3>📜 Nuestra Historia: Una Pasión Desde 2024</h3>
-            <p>Fundada en 2024, GAMEX nació de la visión de crear un espacio dedicado exclusivamente a la comunidad
-                gamer de Canarias. Desde nuestros humildes comienzos, hemos crecido para convertirnos en el referente
-                regional para videojuegos, consolas y accesorios, siempre priorizando la calidad y la experiencia del
-                cliente.</p>
-
-            <hr>
-            <h3>🛡️ Valores y Compromiso GAMEX</h3>
-            <p>Nuestra filosofía se basa en tres pilares fundamentales que nos diferencian en el sector:</p>
-            <ul>
-                <li><strong>Comunidad y Cercanía:</strong> Priorizamos la relación con nuestros clientes. Queremos que
-                    te sientas como en casa, brindándote una atención personalizada y un espacio donde compartir tu
-                    afición.</li>
-                <li><strong>Calidad y Confianza:</strong> Solo ofrecemos productos de la más alta calidad y trabajamos
-                    con proveedores oficiales. Nuestra promesa es que cada compra en GAMEX es una inversión segura en tu
-                    entretenimiento.</li>
-                <li><strong>Innovación Constante:</strong> Estamos siempre a la vanguardia, no solo con los últimos
-                    juegos y consolas, sino también en tendencias de hardware, eSports y nuevas formas de interactuar
-                    con la comunidad.</li>
-            </ul>
-
-            <hr>
-            <h3>🕹️ Oferta de Productos y Servicios: La Experiencia Completa</h3>
-            <p>Nuestra selección está cuidadosamente curada para satisfacer desde el jugador ocasional hasta el
-                profesional más exigente:</p>
-            <ul>
-                <li><strong>Videojuegos (Físico y Digital):</strong> Catálogo masivo que incluye preventas, ediciones
-                    coleccionista, títulos AAA multiplataforma (PS5, Xbox Series X, Switch, PC) e incluso códigos
-                    digitales para tus plataformas favoritas.</li>
-                <li><strong>Consolas de Última Generación:</strong> Disponibilidad garantizada de las plataformas más
-                    solicitadas y sus modelos especiales, asegurando que siempre tengas acceso a la tecnología más
-                    puntera.</li>
-                <li><strong>Accesorios Premium:</strong> Una gama de accesorios de marcas líderes: mandos élite,
-                    auriculares gaming con sonido envolvente, sillas ergonómicas, y cables de alto rendimiento para
-                    minimizar el input lag.</li>
-                <li><strong>Merchandising y Coleccionables:</strong> La mayor variedad de figuras Funko Pop, estatuas de
-                    edición limitada, réplicas, ropa oficial y coleccionables para que decores tu espacio con orgullo.
-                </li>
-            </ul>
-
-            <h4>El Rincón Retro y Coleccionismo 👾</h4>
-            <p>Para los nostálgicos, GAMEX dedica un espacio especial a la historia del gaming. En nuestro Rincón Retro
-                encontrarás una selección rotativa de consolas clásicas (NES, SNES, Dreamcast, PS2), juegos de segunda
-                mano revisados y accesorios difíciles de encontrar. ¡Es el lugar perfecto para revivir tu infancia o
-                descubrir joyas atemporales!</p>
-
-            <h4>Servicio Técnico y Garantía Extendida 🛠️</h4>
-            <p>No solo vendemos, también cuidamos tu equipo. Nuestro Servicio Técnico Especializado en consolas y
-                periféricos ofrece diagnósticos rápidos y reparaciones con componentes originales. Además, ofrecemos
-                opciones de Garantía Extendida para que juegues con total tranquilidad.</p>
-
-            <hr>
-            <h3>🏆 Compromiso con la Comunidad y Eventos</h3>
-            <ul>
-                <li><strong>Torneos Locales de eSports:</strong> Organizamos competiciones mensuales de títulos
-                    populares (FIFA, League of Legends, Smash Bros.) con premios y la oportunidad de clasificar a
-                    eventos regionales.</li>
-                <li><strong>Noches de Juego Abiertas:</strong> Únete a nuestras quedadas casuales. Una oportunidad
-                    perfecta para probar juegos nuevos, participar en partidas multijugador y conocer a la comunidad
-                    gamer de la isla.</li>
-                <li><strong>Eventos de Lanzamiento:</strong> Sé el primero en tener los títulos más esperados. Nuestros
-                    eventos de medianoche incluyen regalos, concursos y un ambiente festivo inigualable.</li>
-            </ul>
-
-            <hr>
-            <h3>📍 Visítanos: Tu Siguiente Nivel de Juego Te Espera</h3>
-            <p>Te invitamos a vivir la experiencia GAMEX en nuestra tienda principal. Estamos ubicados en un punto
-                céntrico y accesible, listos para recibirte:</p>
-            <p class="strong-location"><strong>Calle Triana, 91, 35002 Las Palmas de Gran Canaria, Las Palmas.</strong>
+            <p>Nos esforzamos cada día para ofrecerte contenido actualizado, reseñas exclusivas y una comunidad donde
+                puedas compartir tus opiniones y experiencias. Además, contamos con un blog que cubre toda la actualidad
+                del mundo del gaming, desde lanzamientos hasta consejos expertos.</p>
+            <p>Con nuestra plataforma, tú eres parte activa de la evolución gamer en Canarias, participando en debates,
+                compartiendo estrategias o simplemente disfrutando de una comunidad vibrante y apasionada. GAMEX está
+                aquí para acompañarte en cada partida.</p>
+            <p>Te invitamos a visitar nuestras redes sociales, donde publicamos promociones especiales, concursos y
+                noticias que no encontrarás en ningún otro lugar. Mantente informado y conecta con otros gamers como tú.
             </p>
-            <p>Aunque nos encanta verte en persona, nuestra tienda en línea está abierta 24/7 con envíos rápidos a todas
-                las Islas Canarias. ¡Pide hoy y recibe tu juego mañana!</p>
-
-            <div class="contact-info">
-                <p>Para consultas, pedidos especiales o soporte:</p>
-                <p>📧 Email de Soporte: <strong>GAMEX@gmail.com</strong></p>
-                <p>📞 Teléfono (Llamadas y WhatsApp): <strong>691 77 11 22</strong></p>
-            </div>
+            <p>Nuestra misión es transformar cada experiencia de juego en un momento inolvidable. Por eso, además de
+                productos, te ofrecemos contenido, eventos y asistencia técnica que realmente marcan la diferencia.</p>
 
             <hr>
-            <h3>👥 Nuestra Comunidad Gamer: El Corazón de GAMEX</h3>
-            <p>En GAMEX, no somos solo una tienda; somos una familia de apasionados por los videojuegos. Nuestra
-                comunidad se extiende por todas las Islas Canarias, uniendo a jugadores de todas las edades y niveles.
-                Organizamos encuentros mensuales donde compartimos experiencias, descubrimos nuevos títulos y formamos
-                alianzas estratégicas en juegos multijugador. Creemos que el gaming es más que entretenimiento: es una
-                forma de conectar, aprender y crecer juntos.</p>
-            <p>Únete a nuestro foro en línea, donde discutimos estrategias, compartimos guías y organizamos eventos
-                virtuales. Además, tenemos un programa de fidelidad que recompensa a nuestros clientes más leales con
-                descuentos exclusivos, acceso anticipado a preventas y entradas gratuitas a nuestros torneos. ¡Tu pasión
-                por los juegos te espera aquí!</p>
+
+            <article>
+                <h3>📜 Nuestra Historia: Una Pasión Desde 2024</h3>
+                <p>Fundada en 2024, GAMEX nació de la visión de crear un espacio dedicado exclusivamente a la comunidad
+                    gamer de Canarias. Desde nuestros humildes comienzos, hemos crecido para convertirnos en el
+                    referente regional para videojuegos, consolas y accesorios, siempre priorizando la calidad y la
+                    experiencia del cliente.</p>
+            </article>
 
             <hr>
-            <h3>📈 Tendencias en Gaming: Lo Último y Lo Próximo</h3>
-            <p>El mundo del gaming evoluciona constantemente, y en GAMEX estamos siempre un paso adelante. Actualmente,
-                vemos un auge en los juegos de realidad virtual y aumentada, con títulos como Half-Life: Alyx y Pokémon
-                GO liderando la carga. La nube gaming está democratizando el acceso a experiencias de alta calidad,
-                permitiendo jugar AAA en dispositivos modestos. Además, el metaverso gaming está emergiendo, con mundos
-                virtuales donde los jugadores pueden socializar, trabajar y crear.</p>
-            <p>Mantente informado con nuestras newsletters semanales, donde analizamos las últimas tendencias, reseñamos
-                nuevos lanzamientos y te damos consejos para optimizar tu setup. Desde esports profesionales hasta
-                juegos indie innovadores, GAMEX te mantiene al día con lo que importa en el universo gamer.</p>
+
+            <article>
+                <h3>🛡️ Valores y Compromiso GAMEX</h3>
+                <p>Nuestra filosofía se basa en tres pilares fundamentales que nos diferencian en el sector:</p>
+                <ul>
+                    <li><strong>Comunidad y Cercanía:</strong> Priorizamos la relación con nuestros clientes. Queremos
+                        que te sientas como en casa, brindándote una atención personalizada y un espacio donde compartir
+                        tu afición.</li>
+                    <li><strong>Calidad y Confianza:</strong> Solo ofrecemos productos de la más alta calidad y
+                        trabajamos con proveedores oficiales. Nuestra promesa es que cada compra en GAMEX es una
+                        inversión segura en tu entretenimiento.</li>
+                    <li><strong>Innovación Constante:</strong> Estamos siempre a la vanguardia, no solo con los últimos
+                        juegos y consolas, sino también en tendencias de hardware, eSports y nuevas formas de
+                        interactuar con la comunidad.</li>
+                </ul>
+            </article>
 
             <hr>
-            <h3>💬 Testimonios de Clientes: Lo Que Dicen Nuestros Gamers</h3>
-            <p>No nos creas solo a nosotros; escucha a quienes han vivido la experiencia GAMEX:</p>
-            <blockquote>"GAMEX transformó mi setup gaming. Sus consejos me ayudaron a elegir la consola perfecta, y el
-                servicio técnico me salvó cuando mi mando falló. ¡Son los mejores!" - Juan Pérez, Tenerife</blockquote>
-            <blockquote>"Como madre de un adolescente gamer, aprecio cómo GAMEX fomenta la comunidad sana. Los eventos
-                son divertidos y seguros para toda la familia." - María López, Gran Canaria</blockquote>
-            <blockquote>"He comprado aquí desde que abrieron. Su selección de juegos retro es incomparable, y siempre me
-                tratan como un amigo." - Carlos Rodríguez, Lanzarote</blockquote>
-            <p>Estos testimonios reflejan nuestro compromiso con la satisfacción del cliente. ¡Únete a miles de gamers
-                felices y comparte tu historia con nosotros!</p>
+
+            <article>
+                <h3>🕹️ Oferta de Productos y Servicios: La Experiencia Completa</h3>
+                <p>Nuestra selección está cuidadosamente curada para satisfacer desde el jugador ocasional hasta el
+                    profesional más exigente:</p>
+                <ul>
+                    <li><strong>Videojuegos (Físico y Digital):</strong> Catálogo masivo que incluye preventas,
+                        ediciones coleccionista, títulos AAA multiplataforma (PS5, Xbox Series X, Switch, PC) e incluso
+                        códigos digitales para tus plataformas favoritas.</li>
+                    <li><strong>Consolas de Última Generación:</strong> Disponibilidad garantizada de las plataformas
+                        más solicitadas y sus modelos especiales, asegurando que siempre tengas acceso a la tecnología
+                        más puntera.</li>
+                    <li><strong>Accesorios Premium:</strong> Una gama de accesorios de marcas líderes: mandos élite,
+                        auriculares gaming con sonido envolvente, sillas ergonómicas, y cables de alto rendimiento para
+                        minimizar el input lag.</li>
+                </ul>
+            </article>
 
             <hr>
-            <h3>🚀 Futuros Planes: Lo Que Viene en GAMEX</h3>
-            <p>El futuro de GAMEX es brillante y lleno de innovación. Estamos expandiendo nuestra presencia en línea con
-                una app móvil que permitirá compras rápidas, seguimiento de pedidos en tiempo real y acceso a contenido
-                exclusivo. Planeamos abrir sucursales en otras islas, llevando la experiencia GAMEX a más comunidades
-                gamer.</p>
-            <p>Además, estamos desarrollando un centro de formación en gaming, donde impartiremos cursos sobre diseño de
-                juegos, streaming profesional y esports. Nuestro objetivo es no solo vender productos, sino empoderar a
-                la próxima generación de creadores y jugadores. ¡Mantente atento, porque GAMEX está a punto de subir de
-                nivel!</p>
+
+            <article>
+                <h3>👥 Nuestra Comunidad Gamer: El Corazón de GAMEX</h3>
+                <p>En GAMEX, no somos solo una tienda; somos una familia de apasionados por los videojuegos. Nuestra
+                    comunidad se extiende por todas las Islas Canarias, uniendo a jugadores de todas las edades y
+                    niveles.</p>
+                <p>Organizamos encuentros mensuales donde compartimos experiencias, descubrimos nuevos títulos y
+                    formamos alianzas estratégicas en juegos multijugador. Creemos que el gaming es más que
+                    entretenimiento: es una forma de conectar, aprender y crecer juntos.</p>
+                <p>Únete a nuestro foro en línea, donde discutimos estrategias, compartimos guías y organizamos eventos
+                    virtuales. Además, tenemos un programa de fidelidad que recompensa a nuestros clientes más leales
+                    con descuentos exclusivos, acceso anticipado a preventas y entradas gratuitas a nuestros torneos.
+                    ¡Tu pasión por los juegos te espera aquí!</p>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>📈 Tendencias en Gaming: Lo Último y Lo Próximo</h3>
+                <p>El mundo del gaming evoluciona constantemente, y en GAMEX estamos siempre un paso adelante.
+                    Actualmente, vemos un auge en los juegos de realidad virtual y aumentada, con títulos como
+                    Half-Life: Alyx y Pokémon GO liderando la carga. La nube gaming está democratizando el acceso a
+                    experiencias de alta calidad, permitiendo jugar AAA en dispositivos modestos. Además, el metaverso
+                    gaming está emergiendo, con mundos virtuales donde los jugadores pueden socializar, trabajar y
+                    crear.</p>
+                <p>Mantente informado con nuestras newsletters semanales, donde analizamos las últimas tendencias,
+                    reseñamos nuevos lanzamientos y te damos consejos para optimizar tu setup. Desde esports
+                    profesionales hasta juegos indie innovadores, GAMEX te mantiene al día con lo que importa en el
+                    universo gamer.</p>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>💬 Testimonios de Clientes: Lo Que Dicen Nuestros Gamers</h3>
+                <p>No nos creas solo a nosotros; escucha a quienes han vivido la experiencia GAMEX:</p>
+                <blockquote>"GAMEX transformó mi setup gaming. Sus consejos me ayudaron a elegir la consola perfecta, y
+                    el servicio técnico me salvó cuando mi mando falló. ¡Son los mejores!" - Juan Pérez, Tenerife
+                </blockquote>
+                <blockquote>"Como madre de un adolescente gamer, aprecio cómo GAMEX fomenta la comunidad sana. Los
+                    eventos son divertidos y seguros para toda la familia." - María López, Gran Canaria</blockquote>
+                <blockquote>"He comprado aquí desde que abrieron. Su selección de juegos retro es incomparable, y
+                    siempre me tratan como un amigo." - Carlos Rodríguez, Lanzarote</blockquote>
+                <p>Estos testimonios reflejan nuestro compromiso con la satisfacción del cliente. ¡Únete a miles de
+                    gamers felices y comparte tu historia con nosotros!</p>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>🚀 Futuros Planes: Lo Que Viene en GAMEX</h3>
+                <p>El futuro de GAMEX es brillante y lleno de innovación. Estamos expandiendo nuestra presencia en línea
+                    con una app móvil que permitirá compras rápidas, seguimiento de pedidos en tiempo real y acceso a
+                    contenido exclusivo. Planeamos abrir sucursales en otras islas, llevando la experiencia GAMEX a más
+                    comunidades gamer.</p>
+                <p>Además, estamos desarrollando un centro de formación en gaming, donde impartiremos cursos sobre
+                    diseño de juegos, streaming profesional y esports. Nuestro objetivo es no solo vender productos,
+                    sino empoderar a la próxima generación de creadores y jugadores. ¡Mantente atento, porque GAMEX está
+                    a punto de subir de nivel!</p>
+            </article>
         </section>
+
 
         <section id="juegos" class="content-section" style="display: none;">
             <h5>Nuestros Juegos</h5>
-            <form id="productForm" onsubmit="addProduct(event)">
+            <form id="productForm" onsubmit="validateProductForm(event)">
                 <label for="productName">Nombre del Producto:</label>
-                <input type="text" id="productName" placeholder="Ingresa el nombre del producto" required>
+                <input type="text" id="productName" placeholder="Ingresa el nombre del producto">
+                <span id="productNameError" class="error-message"></span>
                 <label for="productPrice">Precio:</label>
-                <input type="number" id="productPrice" placeholder="Ingresa el precio" step="0.01" required>
+                <input type="number" id="productPrice" placeholder="Ingresa el precio" step="0.01">
+                <span id="productPriceError" class="error-message"></span>
                 <label for="productDescription">Descripción:</label>
-                <textarea id="productDescription" placeholder="Ingresa la descripción del producto" required></textarea>
+                <textarea id="productDescription" placeholder="Ingresa la descripción del producto"></textarea>
+                <span id="productDescriptionError" class="error-message"></span>
+                <label for="productImage">URL de Imagen:</label>
+                <input type="url" id="productImage" placeholder="Ingresa la URL de la imagen (png, jpg, etc.)">
+                <span id="productImageError" class="error-message"></span>
                 <button type="submit">Agregar Producto</button>
             </form>
             <div id="products-list" class="game-container"></div>
@@ -368,101 +373,75 @@
         <section id="contacto" class="content-section" style="display: none;">
             <h5>Contáctanos</h5>
             <div class="contact-info">
-                <p>¡Hola, apasionado gamer! En GAMEX, sabemos que el mundo de los videojuegos puede ser tan emocionante
-                    como desafiante, y estamos aquí para acompañarte en cada paso. Ya sea que tengas una duda sobre el
-                    último lanzamiento, necesites asesoramiento para tu setup perfecto, o simplemente quieras compartir
-                    tus experiencias, nuestro equipo está listo para ayudarte con una sonrisa y el entusiasmo que solo
-                    los verdaderos fans pueden ofrecer.</p>
-                <p>Nos enorgullece ser el puente entre tú y el universo gamer en Canarias. Desde consultas rápidas hasta
-                    soporte técnico detallado, nos aseguramos de que cada interacción sea personalizada y efectiva. ¡No
-                    dudes en acercarte; somos más que una tienda, somos tu comunidad!</p>
-                <p>Puedes ponerte en contacto con nosotros a través de los siguientes medios, cada uno diseñado para
-                    adaptarse a tus necesidades y preferencias:</p>
-
-                <strong>Dirección Física:</strong><br>
-                Calle Triana, 91<br>
-                35002 Las Palmas de Gran Canaria, Las Palmas<br>
-                <p>Visítanos en persona y sumérgete en nuestro espacio dedicado a los gamers. Aquí podrás explorar
-                    productos en vivo, probar demos, y charlar con nuestro equipo experto. Es el lugar ideal para sentir
-                    la energía de la comunidad y descubrir ofertas exclusivas que no encontrarás en línea.</p><br>
-
-                <strong>Correo Electrónico:</strong><br>
-                <a href="mailto:GAMEX@gmail.com">GAMEX@gmail.com</a><br>
-                <p>Para consultas detalladas, pedidos especiales o cualquier tema que requiera un poco más de tiempo,
-                    envíanos un email. Nuestro equipo revisa cada mensaje con atención y responde en un plazo de 24-48
-                    horas durante días hábiles. Es perfecto para preguntas técnicas, recomendaciones personalizadas o
-                    feedback sobre nuestros servicios.</p><br>
-
-                <strong>Teléfono:</strong><br>
-                📞 691 77 11 22<br>
-                <p>Llama directamente para una conversación inmediata. Ya sea para verificar disponibilidad de
-                    productos, resolver dudas rápidas o coordinar una visita, estamos disponibles para atenderte de
-                    manera cálida y eficiente. Recuerda que también aceptamos WhatsApp para mensajes más informales.</p>
-                <br>
-
-                <strong>Horario de Atención:</strong><br>
-                Lunes a Viernes: 9:00 AM - 6:00 PM<br>
-                Sábados: 10:00 AM - 2:00 PM<br>
-                <p>Entendemos que los gamers tenemos horarios únicos, por eso extendemos nuestro horario de atención
-                    para acomodar tus necesidades. Fuera de estos tiempos, puedes dejarnos un mensaje y te responderemos
-                    lo antes posible al día siguiente.</p>
-                <p>En GAMEX, valoramos cada consulta como una oportunidad para fortalecer nuestra relación contigo. Nos
-                    comprometemos a responder de forma clara, rápida y con soluciones prácticas, asegurándonos de que
-                    salgas satisfecho y listo para seguir jugando. ¡Tu opinión y preguntas son el combustible que nos
-                    impulsa a mejorar día a día!</p>
+                <p>¿Tienes alguna pregunta o necesitas más información? ¡Estamos aquí para ayudarte! Puedes ponerte en
+                    contacto con nosotros a través de los siguientes medios:</p>
+                <p>Además de nuestros canales habituales, ofrecemos soporte personalizado a través de chat en vivo en
+                    horarios laborales y atención vía redes sociales para mayor comodidad y rapidez.</p>
+                <p>Nos comprometemos a responder todas tus consultas en un plazo máximo de 24 horas durante días
+                    hábiles, garantizando así que nunca quedes sin respuestas.</p>
+                <p>Para consultas frecuentes, visita nuestra sección de ayuda online donde encontrarás guías detalladas,
+                    tutoriales y comentarios de otros usuarios que pueden ayudarte a resolver dudas rápidamente.</p>
+                <p>Atendemos no solo pedidos y consultas, sino también sugerencias para mejorar nuestros productos y
+                    servicios. Tu opinión es fundamental para nosotros.</p>
+                <p>Recuerda que también puedes agendar una cita presencial en nuestra tienda para recibir asesoramiento
+                    personalizado y probar productos antes de comprar.</p>
             </div>
-
             <div class="form-container">
-                <h3>Envíanos un Mensaje Directo</h3>
-                <p>¿Prefieres escribirnos desde aquí? Completa este formulario rápido y sencillo. Nos encanta recibir
-                    tus mensajes, ya que nos permiten conocerte mejor y ofrecerte el mejor soporte posible. Recuerda que
-                    todos los campos son obligatorios para procesar tu consulta de manera efectiva.</p>
+                <h3>Envíanos un Mensaje</h3>
                 <form id="contactForm" onsubmit="validateForm(event)">
                     <p>
                         <label for="fullName">Nombre y Apellidos:</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="Ej: Juan Pérez García">
+                        <input type="text" id="fullName" name="fullName">
                         <span id="fullNameError" class="error-message"></span>
                     </p>
                     <p>
                         <label for="email">Correo Electrónico:</label>
-                        <input type="text" id="email" name="email" placeholder="Ej: juanperez@email.com">
+                        <input type="text" id="email" name="email">
                         <span id="emailError" class="error-message"></span>
                     </p>
                     <p>
                         <label for="subject">Asunto:</label>
-                        <input type="text" id="subject" name="subject" placeholder="Ej: Consulta sobre juegos de PS5">
+                        <input type="text" id="subject" name="subject">
                         <span id="subjectError" class="error-message"></span>
                     </p>
                     <p>
                         <label for="message">Mensaje:</label>
-                        <textarea id="message" name="message"
-                            placeholder="Cuéntanos más sobre tu consulta. ¿Qué necesitas? ¿Tienes alguna preferencia específica?"></textarea>
+                        <textarea id="message" name="message"></textarea>
                         <span id="messageError" class="error-message"></span>
                     </p>
-                    <button type="submit">Enviar Mensaje</button>
+                    <button type="submit">Enviar</button>
                 </form>
-                <p>Una vez enviado, recibirás una confirmación automática y nuestro equipo se pondrá en marcha para
-                    responderte. ¡Gracias por confiar en GAMEX para todas tus aventuras gamer!</p>
             </div>
-
             <div class="map-container">
                 <h2>Encuéntranos en el Mapa</h2>
-                <p>¿Planeas visitarnos? Usa este mapa interactivo para localizar nuestra tienda fácilmente. Estamos en
-                    el corazón de Las Palmas de Gran Canaria, con fácil acceso en transporte público y estacionamiento
-                    cercano. ¡Te esperamos con los brazos abiertos para una experiencia inolvidable!</p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d219.95586295570152!2d-15.417028809797868!3d28.10707630834215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1731577935311!5m2!1ses!2ses"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
         </section>
         <section id="empleos" class="content-section" style="display: none;">
             <h5>Únete a Nuestro Equipo y Forma Parte de GAMEX</h5>
             <p>En GAMEX, creemos que el talento apasionado por los videojuegos es la clave de nuestro éxito.
                 Si buscas un entorno dinámico donde puedas crecer profesionalmente mientras disfrutas de tu pasión,
                 ¡esta es tu oportunidad! Aquí están nuestras vacantes actuales:</p>
-
+            <p>Valoramos un ambiente inclusivo y colaborativo, donde la creatividad y la innovación florecen. Nuestros
+                empleados reciben capacitaciones constantes para desarrollarse en sus roles y participar activamente en
+                los proyectos que definen el futuro de GAMEX.</p>
+            <p>Nuestro compromiso incluye no solo un salario competitivo sino también beneficios que fomentan el
+                bienestar y la conciliación laboral. Ofrecemos planes de salud, flexibilidad horaria y eventos
+                exclusivos para el equipo.</p>
+            <p>Si no ves una vacante que se adapte a tu perfil, no dudes en enviarnos tu candidatura espontánea. Estamos
+                siempre atentos a nuevos talentos grandes y pequeños, dispuestos a crecer junto a nosotros.</p>
+            <p>Conoce más sobre nuestro proceso de selección y la cultura empresarial en la sección de recursos humanos
+                en nuestra página web.</p>
+            <p>Forma parte de un equipo apasionado, diverso y en constante evolución. ¡Te esperamos en GAMEX!</p>
+            <p>Estamos comprometidos con la igualdad de oportunidades y fomentamos un ambiente de trabajo respetuoso y
+                seguro para tod@s.</p>
+            <p>Consulta regularmente nuestras redes y portal de empleo para estar al día con las últimas oportunidades y
+                novedades corporativas.</p>
+            <p>Para más información o preguntas, contacta con nuestro departamento de talento a través del correo <a
+                    href="mailto:empleos@gamex.com">empleos@gamex.com</a>.</p>
             <div class="vacante">
                 <h3>Desarrollador Front-End HTML/CSS</h3>
                 <p>Descripción: Estamos buscando un Desarrollador Front-End especializado en HTML y CSS
@@ -516,12 +495,15 @@
             <div class="vacante">
                 <h3>Especialista en Atención al Cliente</h3>
                 <p>Descripción: Buscamos un Especialista en Atención al Cliente apasionado por los videojuegos para
-                    unirse a nuestro equipo de servicio. Serás el puente entre GAMEX y nuestros clientes, resolviendo
-                    consultas, procesando pedidos y ofreciendo recomendaciones personalizadas sobre juegos y accesorios.
-                    Tu entusiasmo por el gaming hará que cada interacción sea memorable y positiva.</p>
+                    unirse a
+                    nuestro equipo de servicio. Serás el puente entre GAMEX y nuestros clientes, resolviendo consultas,
+                    procesando pedidos y ofreciendo recomendaciones personalizadas sobre juegos y accesorios. Tu
+                    entusiasmo
+                    por el gaming hará que cada interacción sea memorable y positiva.</p>
                 <p>Requisitos: Experiencia en atención al cliente, preferiblemente en retail; conocimientos básicos de
                     videojuegos y consolas; habilidades de comunicación excelentes; capacidad para trabajar bajo presión
-                    y resolver problemas rápidamente; pasión por ayudar a otros gamers.</p>
+                    y
+                    resolver problemas rápidamente; pasión por ayudar a otros gamers.</p>
                 <p>Ubicación: Las Palmas de Gran Canaria</p>
                 <p>Cómo aplicar: Envía tu CV y una carta de motivación a <a
                         href="mailto:empleos@gamex.com">empleos@gamex.com</a></p>
@@ -530,12 +512,17 @@
             <div class="vacante">
                 <h3>Gerente de Tienda</h3>
                 <p>Descripción: Estamos buscando un Gerente de Tienda con experiencia en retail y amor por los
-                    videojuegos para liderar nuestras operaciones diarias. Serás responsable de gestionar el inventario,
-                    supervisar al equipo, asegurar la satisfacción del cliente y contribuir a la estrategia de ventas.
-                    Tu visión ayudará a GAMEX a crecer como el referente gamer en Canarias.</p>
+                    videojuegos
+                    para liderar nuestras operaciones diarias. Serás responsable de gestionar el inventario, supervisar
+                    al
+                    equipo, asegurar la satisfacción del cliente y contribuir a la estrategia de ventas. Tu visión
+                    ayudará a
+                    GAMEX a crecer como el referente gamer en Canarias.</p>
                 <p>Requisitos: Experiencia previa en gestión de tienda o retail; conocimientos en gestión de inventario
-                    y ventas; habilidades de liderazgo y motivación de equipos; familiaridad con el sector gaming es un
-                    plus; capacidad para trabajar horarios flexibles incluyendo fines de semana.</p>
+                    y
+                    ventas; habilidades de liderazgo y motivación de equipos; familiaridad con el sector gaming es un
+                    plus;
+                    capacidad para trabajar horarios flexibles incluyendo fines de semana.</p>
                 <p>Ubicación: Las Palmas de Gran Canaria</p>
                 <p>Cómo aplicar: Envía tu CV y referencias laborales a <a
                         href="mailto:empleos@gamex.com">empleos@gamex.com</a></p>
@@ -545,8 +532,10 @@
                 <h3>Técnico de Reparaciones</h3>
                 <p>Descripción: Únete a nuestro equipo técnico como Técnico de Reparaciones especializado en consolas y
                     accesorios gaming. Serás responsable de diagnosticar y reparar equipos, ofrecer mantenimiento
-                    preventivo y asesorar a clientes sobre optimización de hardware. Tu expertise mantendrá a nuestros
-                    gamers jugando sin interrupciones.</p>
+                    preventivo
+                    y asesorar a clientes sobre optimización de hardware. Tu expertise mantendrá a nuestros gamers
+                    jugando
+                    sin interrupciones.</p>
                 <p>Requisitos: Experiencia en reparación de electrónicos, preferiblemente consolas y periféricos gaming;
                     conocimientos en soldadura, circuitos y software de diagnóstico; certificaciones en reparación de
                     hardware son un plus; pasión por la tecnología y los videojuegos; capacidad para trabajar de manera
@@ -560,27 +549,33 @@
                 <h3>Community Manager</h3>
                 <p>Descripción: Buscamos un Community Manager creativo y apasionado por los videojuegos para gestionar
                     nuestras redes sociales y comunidad online. Serás responsable de crear contenido engaging,
-                    interactuar con seguidores, organizar eventos virtuales y fortalecer la presencia de GAMEX en la
-                    comunidad gamer. Tu voz será la de GAMEX en el mundo digital.</p>
+                    interactuar
+                    con seguidores, organizar eventos virtuales y fortalecer la presencia de GAMEX en la comunidad
+                    gamer. Tu
+                    voz será la de GAMEX en el mundo digital.</p>
                 <p>Requisitos: Experiencia en gestión de redes sociales y community management; conocimientos en
                     herramientas de diseño gráfico y edición de video; pasión por los videojuegos y la cultura gamer;
                     habilidades de escritura y comunicación; capacidad para analizar métricas y optimizar estrategias de
                     engagement.</p>
                 <p>Ubicación: Las Palmas de Gran Canaria (con posibilidad de trabajo remoto parcial)</p>
                 <p>Cómo aplicar: Envía tu CV, enlaces a perfiles sociales gestionados y ejemplos de contenido creado a
-                    <a href="mailto:empleos@gamex.com">empleos@gamex.com</a></p>
+                    <a href="mailto:empleos@gamex.com">empleos@gamex.com</a>
+                </p>
             </div>
 
             <div class="vacante">
                 <h3>Analista de Ventas</h3>
                 <p>Descripción: Estamos en busca de un Analista de Ventas con mente analítica y amor por los datos para
                     unirse a nuestro equipo. Serás responsable de analizar tendencias de ventas, identificar
-                    oportunidades de crecimiento, elaborar informes y colaborar en estrategias de marketing. Tu trabajo
-                    ayudará a GAMEX a optimizar sus operaciones y expandir su alcance en el mercado gamer.</p>
+                    oportunidades
+                    de crecimiento, elaborar informes y colaborar en estrategias de marketing. Tu trabajo ayudará a
+                    GAMEX a
+                    optimizar sus operaciones y expandir su alcance en el mercado gamer.</p>
                 <p>Requisitos: Experiencia en análisis de datos y ventas; conocimientos en herramientas como Excel,
-                    Google Analytics y CRM; habilidades en interpretación de métricas y elaboración de informes; interés
-                    en la industria del gaming; capacidad para trabajar con deadlines y comunicar insights de manera
-                    clara.</p>
+                    Google
+                    Analytics y CRM; habilidades en interpretación de métricas y elaboración de informes; interés en la
+                    industria del gaming; capacidad para trabajar con deadlines y comunicar insights de manera clara.
+                </p>
                 <p>Ubicación: Las Palmas de Gran Canaria</p>
                 <p>Cómo aplicar: Envía tu CV y un ejemplo de análisis o informe realizado a <a
                         href="mailto:empleos@gamex.com">empleos@gamex.com</a></p>
@@ -588,15 +583,309 @@
         </section>
 
     </main>
+    <section id="faq" class="content-section" style="display: none;">
+        <h5>Preguntas Frecuentes (FAQ) - GAMEX</h5>
+        <h3>¿Qué productos ofrece GAMEX?</h3>
+        <p>En GAMEX encontrarás una amplísima variedad de productos relacionados con el mundo gamer. Desde los más
+            recientes lanzamientos en videojuegos para todas las plataformas principales (PS5, Xbox Series X, Nintendo
+            Switch y PC), hasta ediciones especiales y coleccionistas. También ofrecemos una amplia gama de accesorios
+            premium, incluyendo mandos, auriculares con sonido envolvente, sillas ergonómicas y cables de alto
+            rendimiento para mejorar tu experiencia de juego.</p>
+
+        <h3>¿Cómo puedo realizar un pedido en la tienda en línea?</h3>
+        <p>Realizar un pedido es muy sencillo. Solo tienes que navegar por nuestra tienda en línea, seleccionar los
+            productos que desees, añadirlos a tu carrito y seguir el proceso de compra. Aceptamos múltiples formas de
+            pago para tu comodidad. Recibirás confirmación por correo electrónico con el detalle de tu compra y los
+            tiempos estimados de entrega.</p>
+
+        <h3>¿Cuáles son los tiempos y costos de envío?</h3>
+        <p>Ofrecemos envíos rápidos y seguros a todas las Islas Canarias. Los tiempos estándar de entrega oscilan entre
+            24 y 72 horas hábiles dependiendo de la ubicación y disponibilidad del producto. Los costos varían según el
+            peso y volumen del paquete, pero trabajamos para ofrecer tarifas competitivas y promociones gratuitas en
+            ciertos pedidos.</p>
+
+        <h3>¿Qué políticas de garantía y devolución tiene GAMEX?</h3>
+        <p>Todos nuestros productos cuentan con garantía oficial de los fabricantes y una garantía extendida que
+            ofrecemos para mayor seguridad. Si tienes algún problema con tu compra, puedes solicitar la devolución o
+            reparación dentro de los plazos establecidos. Nuestro servicio técnico especializado está siempre listo para
+            ayudarte con diagnósticos y reparaciones confiables.</p>
+
+        <h3>¿Puedo comprar códigos digitales y descargarlos directamente?</h3>
+        <p>Sí. GAMEX ofrece códigos digitales para múltiples plataformas, que te permiten descargar juegos y contenido
+            adicional de manera rápida y segura sin necesidad de esperar un envío físico. Al comprar códigos digitales
+            recibirás un correo con las instrucciones y el código para activación inmediata.</p>
+
+        <h3>¿Cómo puedo participar en los torneos y eventos organizados por GAMEX?</h3>
+        <p>Regularmente organizamos torneos locales y eventos especiales de lanzamiento. Para participar, solo debes
+            registrarte a través de los formularios que publicamos en nuestra web o asistir a nuestras convocatorias.
+            Los torneos usualmente tienen premios y ranking oficiales, y las noches de juego abierto son perfectas para
+            conocer a la comunidad gamer.</p>
+
+        <h3>¿Qué debo hacer si tengo problemas con un producto o servicio?</h3>
+        <p>En caso de cualquier inconveniente, puedes contactar con nuestro servicio de atención al cliente por correo
+            electrónico o teléfono. Nuestro equipo está capacitado para resolver consultas, gestionar garantías o
+            redirigir a soporte técnico para reparaciones. Respondemos con rapidez y cordialidad para asegurar tu
+            satisfacción total.</p>
+
+        <h3>¿Ofrecen algún programa de fidelidad o descuentos?</h3>
+        <p>Sí, contamos con un programa de fidelidad para premiar a nuestros clientes frecuentes. Puedes acumular puntos
+            con tus compras, que luego se traducen en descuentos exclusivos, acceso anticipado a preventas y entradas
+            gratuitas para eventos especiales. Consulta nuestro apartado de fidelidad en la web para más detalles.</p>
+
+        <h3>¿Puedo devolver un producto si no estoy satisfecho?</h3>
+        <p>Claro, aceptamos devoluciones bajo condiciones específicas dependiendo del tipo de producto y estado del
+            mismo. Consulta nuestra política de devoluciones para conocer los requisitos y plazos. Nuestro equipo te
+            asistirá para que el proceso sea sencillo y rápido.</p>
+
+        <h3>¿Cómo garantizan la seguridad y privacidad de mis datos?</h3>
+        <p>La seguridad de nuestros clientes es prioridad. Implementamos protocolos de encriptación en todas las
+            transacciones y almacenamos la información siguiendo la normativa vigente de protección de datos. No
+            compartimos información con terceros sin tu consentimiento y puedes gestionar tus datos en cualquier
+            momento.</p>
+
+        <h3>¿Qué novedades y tendencias cubre GAMEX?</h3>
+        <p>Mantente informado con nuestros boletines semanales que cubren las últimas tendencias en la industria del
+            gaming, desde tecnología de realidad virtual y aumentada hasta lanzamientos de juegos indie. Ofrecemos
+            análisis detallados, consejos para optimizar tu setup y eventos exclusivos para nuestra comunidad.</p>
+
+        <h3>¿Dónde puedo encontrar más información o soporte?</h3>
+        <p>Además de nuestra tienda física y en línea, contamos con un foro y redes sociales donde interactuamos con
+            gamers de todas las Islas Canarias. Únete a nuestras plataformas para estar al día con noticias, tutoriales,
+            y recibir soporte directo de nuestra comunidad y equipo.</p>
+
+        <h3>Contacto y Horarios de Atención</h3>
+        <p>Estamos disponibles para ayudarte de lunes a viernes de 9:00 a 18:00 y sábados de 10:00 a 14:00. Puedes
+            contactarnos vía correo electrónico, teléfono, o redes sociales para cualquier consulta o asistencia que
+            necesites.</p>
+
+        <h3>Consejos para Mejorar tu Experiencia de Juego</h3>
+        <p>En GAMEX te recomendamos actualizar siempre tus drivers y software de tus dispositivos, mantener una buena
+            iluminación en tu zona de juego, y hacer pausas regulares para evitar fatiga. Además, nuestros expertos
+            están siempre disponibles para ayudarte a elegir los mejores accesorios y configuraciones personalizados.
+        </p>
+
+        <h3>Preguntas frecuentes adicionales</h3>
+        <p>¿Puedo personalizar mis accesorios? ¿Qué opciones de financiamiento ofrecen? ¿Cómo funcionan los cursos y
+            formaciones que mencionan? Estas y muchas otras respuestas están disponibles en nuestra sección de ayuda o
+            directamente consultando con nuestro equipo.</p>
+
+        <p>Gracias por confiar en GAMEX, donde tu experiencia gamer es nuestra prioridad. ¡Explora, juega, y forma parte
+            de una comunidad apasionada que crece cada día!</p>
+        <h3>¿Qué métodos de pago aceptan en GAMEX?</h3>
+        <p>Aceptamos tarjetas de crédito y débito, transferencias bancarias y plataformas de pago digital populares como
+            PayPal y Stripe para mayor comodidad y seguridad.</p>
+
+        <h3>¿Ofrecen soporte técnico para los productos comprados?</h3>
+        <p>Sí, nuestro equipo de soporte técnico está disponible para ayudarte con cualquier problema o consulta
+            relacionada con los productos que adquieras en GAMEX.</p>
+
+        <h3>¿Puedo cambiar la dirección de envío después de realizar un pedido?</h3>
+        <p>Si el pedido aún no ha sido enviado, puedes contactarnos para modificar la dirección de envío. Es importante
+            hacerlo lo antes posible para evitar retrasos.</p>
+
+        <h3>¿Tienen opciones de financiación para compras grandes?</h3>
+        <p>Ofrecemos planes de financiación flexibles para compras de alto valor. Consulta con nuestro equipo de ventas
+            para más detalles.</p>
+
+        <h3>¿Cómo puedo cancelar un pedido?</h3>
+        <p>Si deseas cancelar tu pedido, debes hacerlo antes de que se procese el envío. Por favor, comunícate con
+            nuestro servicio de atención al cliente para recibir asistencia inmediata.</p>
+
+        <h3>¿Organizan eventos para principiantes en gaming?</h3>
+        <p>Sí, ofrecemos talleres y eventos especiales dirigidos a jugadores principiantes para que puedan aprender y
+            conectarse con la comunidad GAMEX.</p>
+
+        <h3>¿Dónde puedo obtener recomendaciones personalizadas de juegos?</h3>
+        <p>Nuestro equipo de expertos está disponible para ayudarte a elegir juegos según tus gustos y preferencias.
+            Puedes contactarnos a través de nuestro formulario de contacto o en nuestras redes sociales.</p>
+
+        <h3>¿Tienen descuentos especiales para estudiantes?</h3>
+        <p>Disponemos de descuentos y promociones especiales para estudiantes con identificación válida. Consulta
+            nuestras redes sociales para conocer las ofertas vigentes.</p>
+
+        <h3>¿Cómo puedo reportar comportamientos inapropiados en los eventos?</h3>
+        <p>En GAMEX nos tomamos muy en serio la seguridad y el respeto en nuestros eventos. Puedes reportar cualquier
+            comportamiento inapropiado enviando un correo a seguridad@gamex.com para que tomemos las medidas necesarias.
+        </p>
+
+        <h3>¿Cuáles son los requisitos para participar en los torneos?</h3>
+        <p>Los requisitos varían según el torneo, pero generalmente es necesario registrarse, tener una cuenta activa en
+            la plataforma correspondiente y respetar las reglas específicas de cada evento. Consulta los detalles en
+            nuestras convocatorias.</p>
+    </section>
+
+    <section id="feedbacks" class="content-section" style="display: none; position: relative; overflow: hidden;">
+        <div class="feedbacks-background"></div>
+        <div class="feedbacks-parallax-meteor"></div>
+        <h5>Feedbacks</h5>
+        <div class="game-container">
+            <div class="game-card">
+                <p>"GAMEX es simplemente increíble. Encontré todo lo que necesitaba para mi setup y el servicio fue
+                    espectacular. ¡Recomiendo mucho!"</p>
+                <p><strong>- Laura M., Gran Canaria</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"La comunidad GAMEX es lo mejor que me ha pasado como gamer. Eventos y atención al cliente de
+                    primera."</p>
+                <p><strong>- Diego R., Tenerife</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Me encanta la variedad de juegos y accesorios que tienen. Siempre encuentro algo nuevo para
+                    descubrir."</p>
+                <p><strong>- Ana S., Lanzarote</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"El equipo de GAMEX siempre me asesora con profesionalidad y paciencia. La calidad de sus productos
+                    es excelente."</p>
+                <p><strong>- Carlos V., Fuerteventura</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Los torneos organizados por GAMEX son divertidos y bien estructurados. He conocido a grandes amigos
+                    gracias a ellos."</p>
+                <p><strong>- Marta G., Gran Canaria</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"La rapidez en el envío y la atención personalizada hacen que siempre vuelva a comprar en GAMEX."</p>
+                <p><strong>- Pablo S., Tenerife</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"El mejor lugar para gamers en Canarias. Gran variedad y atención a los detalles."</p>
+                <p><strong>- Irene L., Lanzarote</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Siempre encuentran las últimas novedades y accesorios difíciles de conseguir. 100% recomendado."</p>
+                <p><strong>- Jose M., La Palma</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Excelente variedad de productos y atención al cliente rápida y amable."</p>
+                <p><strong>- Lucia F., Tenerife</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Los eventos de gaming organizados son espectaculares, muy bien coordinados y divertidos."</p>
+                <p><strong>- Miguel R., Gran Canaria</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Me ayudaron a elegir el mejor equipo para streaming, gran asesoría técnica."</p>
+                <p><strong>- Sara L., Lanzarote</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Atención personalizada y rápido envío, sin duda una tienda que recomendaré."</p>
+                <p><strong>- Juan C., Fuerteventura</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"La comunidad es muy acogedora y siempre encuentro compañeros de juego nuevos."</p>
+                <p><strong>- Elena V., La Palma</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Precios competitivos y promociones frecuentes que hacen que vuelva a comprar."</p>
+                <p><strong>- Pablo D., Tenerife</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Me encanta la sección de juegos retro, una joya para los amantes de lo clásico."</p>
+                <p><strong>- Ana M., Gran Canaria</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Servicio técnico confiable y soluciones rápidas para cualquier problema."</p>
+                <p><strong>- Roberto T., Lanzarote</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Excelente lugar para descubrir gadgets y accesorios gaming nuevos y exclusivos."</p>
+                <p><strong>- Claudia G., Fuerteventura</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Participar en los torneos de GAMEX me ha ayudado a mejorar mis habilidades y conocer gente."</p>
+                <p><strong>- Diego N., La Palma</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"La atención postventa es impecable, resolvieron mis dudas rápidamente."</p>
+                <p><strong>- Paula S., Tenerife</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Tienen accesorios para gamers que no encuentro en ningún otro lugar, ¡excelente catálogo!"</p>
+                <p><strong>- Mario J., Gran Canaria</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"Los descuentos para miembros frecuentes son un gran incentivo para seguir comprando."</p>
+                <p><strong>- Sonia B., Lanzarote</strong></p>
+            </div>
+            <div class="game-card">
+                <p>"La comunidad online es muy activa y siempre hay soporte para cualquier consulta."</p>
+                <p><strong>- Andrés H., Fuerteventura</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gestionar" class="content-section" style="display: none;">
+        <h5>Gestionar Productos</h5>
+        <div id="products-manage-list" class="game-container"></div>
+
+        <div id="editFormContainer" style="display: none;">
+            <h3>Editar Producto</h3>
+            <form id="editProductForm" onsubmit="updateProduct(event)">
+                <input type="hidden" id="editIndex">
+                <label for="editProductName">Nombre del Producto:</label>
+                <input type="text" id="editProductName" placeholder="Ingresa el nombre del producto">
+                <span id="editProductNameError" class="error-message"></span>
+                <label for="editProductPrice">Precio:</label>
+                <input type="number" id="editProductPrice" placeholder="Ingresa el precio" step="0.01">
+                <span id="editProductPriceError" class="error-message"></span>
+                <label for="editProductDescription">Descripción:</label>
+                <textarea id="editProductDescription" placeholder="Ingresa la descripción del producto"></textarea>
+                <span id="editProductDescriptionError" class="error-message"></span>
+                <button type="submit">Actualizar Producto</button>
+                <button type="button" onclick="cancelEdit()">Cancelar</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <div class="parallax-container">
-            <div class="parallax-layer parallax-background">
-                <img src="./img/background.png" alt="Galaxia">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>GAMEX</h4>
+                <p>Tu portal gamer en Canarias. Descubre los últimos lanzamientos, accesorios premium y una comunidad
+                    apasionada.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="Facebook">📘</a>
+                    <a href="#" class="social-icon" title="Twitter">🐦</a>
+                    <a href="#" class="social-icon" title="Instagram">📷</a>
+                    <a href="#" class="social-icon" title="Discord">💬</a>
+                    <a href="#" class="social-icon" title="YouTube">📺</a>
+                </div>
             </div>
-            <div class="parallax-layer parallax-meteor">
-                <img src="./img/meteor-image.png" alt="Meteorito">
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+                    <li><a href="#" onclick="showSection('juegos')">Nuestros Juegos</a></li>
+                    <li><a href="#" onclick="showSection('ofertas')">Ofertas</a></li>
+                    <li><a href="#" onclick="showSection('eventos')">Eventos</a></li>
+                    <li><a href="#" onclick="showSection('contacto')">Contacto</a></li>
+                    <li><a href="#" onclick="showSection('faq')">FAQ</a></li>
+                </ul>
             </div>
-            <p class="footer-text">© 2024-2025 GAMEX. Todos los derechos reservados.</p>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📧 <a href="mailto:info@gamex.com">info@gamex.com</a></p>
+                <p>📞 +34 928 123 456</p>
+                <p>📍 Las Palmas de Gran Canaria, España</p>
+                <p>🕒 Lun-Vie: 9:00-18:00 | Sáb: 10:00-14:00</p>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Suscríbete para recibir las últimas novedades y ofertas exclusivas.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024-2025 GAMEX. Todos los derechos reservados. | <a href="#"
+                    onclick="showSection('empleos')">Empleos</a> | <a href="#"
+                    onclick="showSection('feedbacks')">Feedbacks</a></p>
+            <div class="footer-animation">
+                <div class="glow-line"></div>
+            </div>
         </div>
     </footer>
 
