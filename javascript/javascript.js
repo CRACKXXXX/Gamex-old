@@ -1,4 +1,3 @@
-
 // Constants
 const NAV_BUTTONS = document.querySelectorAll('nav button');
 const PARALLAX_METEOR = document.querySelector('.parallax-meteor');
