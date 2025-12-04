@@ -17,7 +17,7 @@
     *   ✨ Glowing Headers & Buttons
     *   🚀 Scroll Progress Bar (Red Gradient)
     *   🖱️ Interactive Hover Effects on Cards
-    *   � Parallax Effects
+    *   🎲 Parallax Effects
 *   **Futuristic Typography:** Using `Quantico` for a sci-fi, tactical feel.
 
 ---
@@ -37,28 +37,28 @@ Explore our curated collection of AAA titles and hidden gems:
 *   *Starfield*, *Spider-Man 2*, and more.
 *   **Product Management System:** A robust CRUD interface to add, edit, and remove games dynamically.
 
-### � **Events & Tournaments**
+### 🕹️ **Events & Tournaments**
 Join the competitive scene with our organized events:
 *   ⚔️ *Super Smash Bros. Ultimate* Tournament
 *   🔫 *Valorant* & *Fortnite* Championships
-*   �️ Retro Gaming Marathons
+*   🎲 Retro Gaming Marathons
 *   🎲 Board Game Nights
 
-### � **Career Opportunities**
+### 🏠 **Career Opportunities**
 We are hiring! Check our listings for:
 *   Front-End Developers
 *   Graphic Designers
 *   Community Managers
 *   And more...
 
-### � **Connect With Us**
+### ⚙️ **Connect With Us**
 *   **Contact Form:** Fully validated with real-time feedback.
 *   **Location:** Integrated Google Maps.
 *   **FAQ:** Comprehensive answers for all your doubts.
 
 ---
 
-## �️ Technologies Used
+## ⚙️ Technologies Used
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
